@@ -1,0 +1,82 @@
+@import 'vars'
+@import 'mixins'
+
+.header
+  background: url("../img/boks-ring-sprot.png") no-repeat center / cover
+  padding: 60px 0
+  height: 100vh
+  overflow: hidden
+  &__container
+    border-left: 2px solid #fff
+    min-height: 50%
+  &__nav
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 0 45px
+    transform: translateY(-10px)
+    &-link
+      border-bottom: 1px solid transparent
+      display: block
+      font-size: 13px
+      color: rgb(254, 254, 254)
+      font-family: AGBookProReg, sans-serif
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 1.2
+      text-align: center
+      &:hover
+        border-bottom: 1px solid rgb(255, 51, 35)
+        color: #ffffff
+        text-decoration: none
+        transition: all 0.3s linear
+      img
+        margin-right: 15px
+        height: 31px
+    &-item
+      margin-right: 15px
+      &-last
+        justify-self: flex-end
+        margin-left: auto
+        margin-right: 0
+        .header__nav-link
+          font-size: 18px
+          //font-family: "Myriad Pro", sans-serif
+          color: rgb(255, 255, 255)
+  &__title
+    position: absolute
+    bottom: 0
+    left: 60px
+    &-red
+      font-size: 47px
+      font-family: AGBookProBold, sans-serif
+      color: rgb(255, 51, 35)
+      text-transform: uppercase
+      line-height: 1.2
+    &-default
+      display: block
+      font-size: 56px
+      font-family: AGBookProBold, sans-serif
+      color: rgb(255, 255, 255)
+      text-transform: uppercase
+      line-height: 1.2
+      text-align: center
+
+.mouse
+  text-align: center
+  position: relative
+  animation-name: updown
+  animation-duration: 2s
+  animation-delay: 1s
+  animation-iteration-count: infinite
+  padding-top: 75px
+  &__image
+    cursor: pointer
+
+@keyframes updown
+  0%
+    top: 0
+  50%
+    top: 50px
+  100%
+    top: 0

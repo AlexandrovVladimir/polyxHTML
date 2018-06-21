@@ -1,0 +1,76 @@
+.training {
+  padding: 60px 0; }
+  .training__title {
+    color: #ff3323;
+    font-family: 'ft40', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2; }
+  .training__digits {
+    padding-right: 5px; }
+  .training__line {
+    border-top: 1px solid #ff3323;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 130px; }
+  .training__text {
+    font-size: 20px;
+    display: inline-block;
+    color: #ff3323;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 5px; }
+
+.advantage__title {
+  color: #ff3323;
+  font-family: 'ft40', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+.advantage__digits {
+  padding-right: 5px; }
+
+.advantage__line {
+  border-top: 1px solid #ff3323;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 130px; }
+
+.advantage__text {
+  font-size: 20px;
+  display: inline-block;
+  color: #ff3323;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-left: 5px; }
+
+.advantage__icons {
+  margin: 100px 0; }
+
+.advantage__type {
+  display: block;
+  font-size: 13px;
+  color: white;
+  line-height: 1.615;
+  max-width: 50%;
+  margin: 25px auto; }
+  .advantage__type-upper {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+    display: block;
+    padding-top: 10px;
+    text-transform: uppercase; }
+
+.advantage__half .advantage__type {
+  max-width: 30%; }

@@ -1,0 +1,204 @@
+@import url(../fonts/ft40/ft40.css);
+.header {
+  background: url("../img/boks-ring-sprot.png") no-repeat center/cover;
+  padding: 60px 0;
+  height: 100vh;
+  overflow: hidden; }
+  .header__container {
+    border-left: 2px solid #fff;
+    min-height: 50%; }
+  .header__nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 45px;
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px); }
+    .header__nav-link {
+      display: block;
+      font-size: 13px;
+      color: #fefefe;
+      font-family: AGBookProReg, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center; }
+      .header__nav-link:hover {
+        color: #ffffff;
+        text-decoration: none; }
+      .header__nav-link img {
+        margin-right: 15px;
+        height: 31px; }
+    .header__nav-item {
+      margin-right: 15px; }
+      .header__nav-item-last {
+        justify-self: flex-end;
+        margin-left: auto;
+        margin-right: 0; }
+        .header__nav-item-last .header__nav-link {
+          font-size: 18px;
+          color: white; }
+  .header__title {
+    position: absolute;
+    bottom: 0;
+    left: 60px; }
+    .header__title-red {
+      font-size: 47px;
+      font-family: AGBookProBold, sans-serif;
+      color: #ff3323;
+      text-transform: uppercase;
+      line-height: 1.2; }
+    .header__title-default {
+      display: block;
+      font-size: 56px;
+      font-family: AGBookProBold, sans-serif;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center; }
+
+.mouse {
+  text-align: center;
+  position: relative;
+  -webkit-animation-name: updown;
+          animation-name: updown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding-top: 75px; }
+  .mouse__image {
+    cursor: pointer; }
+
+@-webkit-keyframes updown {
+  0% {
+    top: 0; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0; } }
+
+@keyframes updown {
+  0% {
+    top: 0; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0; } }
+
+.training {
+  padding: 60px 0; }
+  .training__title {
+    color: #ff3323;
+    font-family: 'ft40', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2; }
+  .training__digits {
+    padding-right: 5px; }
+  .training__line {
+    border-top: 1px solid #ff3323;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 130px; }
+  .training__text {
+    font-size: 20px;
+    display: inline-block;
+    color: #ff3323;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-left: 5px; }
+
+.advantage__title {
+  color: #ff3323;
+  font-family: 'ft40', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; }
+
+.advantage__digits {
+  padding-right: 5px; }
+
+.advantage__line {
+  border-top: 1px solid #ff3323;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 130px; }
+
+.advantage__text {
+  font-size: 20px;
+  display: inline-block;
+  color: #ff3323;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-left: 5px; }
+
+@font-face {
+  font-family: 'AGBookProReg';
+  font-style: normal;
+    font-style-src: url("../fonts/AGBookPro/AGBookProReg.otf"); }
+
+@font-face {
+  font-family: 'AGBookProBold';
+  font-style: normal;
+    font-style-src: url("../fonts/AGBookPro/AGBookProBol.otf"); }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  *:hover, *:active, *:focus {
+    outline: none; }
+
+html {
+  font-size: 16px;
+  height: 100%; }
+
+body {
+  background: #1d1c1c;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.btn-default {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #ff3323;
+  display: block;
+  width: 260px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  color: #e6e6e6;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 57px 5px #ff3323;
+  box-shadow: 0 0 57px 5px #ff3323;
+  margin: 120px auto; }
+  .btn-default:hover {
+    color: #e6e6e6;
+    text-decoration: none; }

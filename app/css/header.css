@@ -1,0 +1,103 @@
+.header {
+  background: url("../img/boks-ring-sprot.png") no-repeat center/cover;
+  padding: 60px 0;
+  height: 100vh;
+  overflow: hidden; }
+  .header__container {
+    border-left: 2px solid #fff;
+    min-height: 50%; }
+  .header__nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 45px;
+    -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+            transform: translateY(-10px); }
+    .header__nav-link {
+      border-bottom: 1px solid transparent;
+      display: block;
+      font-size: 13px;
+      color: #fefefe;
+      font-family: AGBookProReg, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center; }
+      .header__nav-link:hover {
+        border-bottom: 1px solid #ff3323;
+        color: #ffffff;
+        text-decoration: none;
+        -webkit-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
+      .header__nav-link img {
+        margin-right: 15px;
+        height: 31px; }
+    .header__nav-item {
+      margin-right: 15px; }
+      .header__nav-item-last {
+        justify-self: flex-end;
+        margin-left: auto;
+        margin-right: 0; }
+        .header__nav-item-last .header__nav-link {
+          font-size: 18px;
+          color: white; }
+  .header__title {
+    position: absolute;
+    bottom: 0;
+    left: 60px; }
+    .header__title-red {
+      font-size: 47px;
+      font-family: AGBookProBold, sans-serif;
+      color: #ff3323;
+      text-transform: uppercase;
+      line-height: 1.2; }
+    .header__title-default {
+      display: block;
+      font-size: 56px;
+      font-family: AGBookProBold, sans-serif;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center; }
+
+.mouse {
+  text-align: center;
+  position: relative;
+  -webkit-animation-name: updown;
+          animation-name: updown;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding-top: 75px; }
+  .mouse__image {
+    cursor: pointer; }
+
+@-webkit-keyframes updown {
+  0% {
+    top: 0; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0; } }
+
+@keyframes updown {
+  0% {
+    top: 0; }
+  50% {
+    top: 50px; }
+  100% {
+    top: 0; } }

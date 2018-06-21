@@ -1,0 +1,33 @@
+@import 'vars'
+@import 'mixins'
+
+.training
+  padding: 60px 0
+  @include title
+
+.advantage
+  @include title
+  &__icons
+    margin: 100px 0
+  &__type
+    display: block
+    font-size: 13px
+    //font-family: "AGBookPro"
+    color: rgb(255, 255, 255)
+    line-height: 1.615
+    max-width: 50%
+    margin: 25px auto
+    &-upper
+      font-size: 16px
+      //font-family: "AGBookPro"
+      color: rgb(255, 255, 255)
+      font-weight: bold
+      line-height: 1.2
+      display: block
+      padding-top: 10px
+      text-transform: uppercase
+  &__half
+    .advantage__type
+      max-width: 30%
+
+
