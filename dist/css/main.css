@@ -25,6 +25,7 @@
         -ms-transform: translateY(-10px);
             transform: translateY(-10px); }
     .header__nav-link {
+      border-bottom: 1px solid transparent;
       display: block;
       font-size: 13px;
       color: #fefefe;
@@ -34,8 +35,12 @@
       line-height: 1.2;
       text-align: center; }
       .header__nav-link:hover {
+        border-bottom: 1px solid #ff3323;
         color: #ffffff;
-        text-decoration: none; }
+        text-decoration: none;
+        -webkit-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear; }
       .header__nav-link img {
         margin-right: 15px;
         height: 31px; }
@@ -152,6 +157,28 @@
   text-transform: uppercase;
   line-height: 1.2;
   padding-left: 5px; }
+
+.advantage__icons {
+  margin: 100px 0; }
+
+.advantage__type {
+  display: block;
+  font-size: 13px;
+  color: white;
+  line-height: 1.615;
+  max-width: 50%;
+  margin: 25px auto; }
+  .advantage__type-upper {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+    display: block;
+    padding-top: 10px;
+    text-transform: uppercase; }
+
+.advantage__half .advantage__type {
+  max-width: 30%; }
 
 @font-face {
   font-family: 'AGBookProReg';
