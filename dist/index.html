@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 
 	<meta property="og:image" content="img/favicon/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -27,101 +28,309 @@
 
 <body>
 	<header class="header">
-	<div class="container header__container">
-		<div class="row">
-			<div class="col-12">
-				<ul class="header__nav">
-					<li class="header__nav-item">
-						<a href="" class="header__nav-link">Тренировки</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="" class="header__nav-link">Преимущества</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="" class="header__nav-link">Тренер</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="" class="header__nav-link">Галерея</a>
-					</li>
-					<li class="header__nav-item">
-						<a href="" class="header__nav-link">Контакты</a>
-					</li>
-					<li class="header__nav-item header__nav-item-last">
-						<a href="tel: +7(917)-496-82-35" class="header__nav-link">
-							<img src="img/telephone.png" alt="telephone">
-							<span>+7(917)-496-82-35</span>
-						</a>
-					</li>
-				</ul>
+		<div class="container header__container">
+			<div class="row">
+				<div class="col-12">
+					<ul class="header__nav">
+						<li class="header__nav-item">
+							<a href="" class="header__nav-link">Тренировки</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="" class="header__nav-link">Преимущества</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="" class="header__nav-link">Тренер</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="" class="header__nav-link">Галерея</a>
+						</li>
+						<li class="header__nav-item">
+							<a href="" class="header__nav-link">Контакты</a>
+						</li>
+						<li class="header__nav-item header__nav-item-last">
+							<a href="tel: +7(917)-496-82-35" class="header__nav-link">
+								<img src="img/telephone.png" alt="telephone">
+								<span>+7(917)-496-82-35</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__title">
+				<span class="header__title-red">Школа бокса</span> <br>
+				<span class="header__title-default">Антона Краснолуцкого</span>
 			</div>
 		</div>
-		<div class="header__title">
-			<span class="header__title-red">Школа бокса</span> <br>
-			<span class="header__title-default">Антона Краснолуцкого</span>
+		<a href="#" class="header__button btn-default">Записаться</a>
+		<div class="header__mouse mouse">
+			<img src="img/mouse.png" alt="mouse click" class="mouse__image">
 		</div>
-	</div>
-	<a href="#" class="header__button btn-default">Записаться</a>
-	<div class="header__mouse mouse">
-		<img src="img/mouse.png" alt="mouse click" class="mouse__image">
-	</div>
-</header>
-	<div class="container">
-		<div class="row no-gutters">
-			<div class="col-12">
-				<div class="training">
-					<div class="training__title">
-						<span class="training__digits">02</span>
-						<span class="training__line"></span>
-						<span class="training__text">Виды тренировок</span>
-					</div>
-					<div class="training__tabs">
+	</header>
 
+	<section class="training-section">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-12">
+					<div class="training">
+						<div class="training__title">
+							<span class="training__digits">02</span>
+							<span class="training__line"></span>
+							<span class="training__text">Виды тренировок</span>
+						</div>
+						<div class="training__tabs">
+							<div id="tabs-container">
+								<ul class="tabs-menu">
+									<li class="current" rel="tab1">Групповые</li>
+									<li rel="tab2">Индивидуальные</li>
+								</ul>
+								<div class="tab">
+									<h3 class="d_active tab_drawer_heading" rel="tab1">Групповые</h3>
+									<div id="tab1" class="tab-content">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="training__group">
+													<img src="img/group.png" alt="group">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="training__title-group">
+													групповые занятия
+												</div>
+												<div class="training__days">
+													<span>Пн</span>
+													<span>Ср</span>
+													<span>Пт</span>
+												</div>
+												<div class="training__start">c 19-00</div>
+												<div class="training__ticket">
+													<div class="training__row">
+														<span class="training__ticket-text">Абонемент на месяц:</span><span class="training__cost">7200 руб.</span>
+													</div>
+													<div class="training__row">
+														<span class="training__ticket-text">Стоимость занятия:</span><span class="training__cost">600 руб.</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<h3 class="d_active tab_drawer_heading" rel="tab2">Материалы</h3>
+									<div id="tab2" class="tab-content">
+										<p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper eget, sagittis sed eros. Proin tortor tellus, pulvinar at imperdiet in, egestas sed nisl. Aenean tempor neque ut felis dignissim ac congue felis viverra. </p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row advantage-wrapper">
-			<div class="col-12">
-				<div class="advantage">
-					<div class="advantage__title">
-						<span class="advantage__digits">03</span>
-						<span class="advantage__line"></span>
-						<span class="advantage__text">Преимущества</span>
-					</div>
-					<div class="row advantage__icons">
-						<div class="col-md-4 text-center">
-							<img src="img/business-men-group-icon.png" alt="icon">
-							<span class="advantage__type-upper">Персонал</span>
-							<span class="advantage__type">Профессиональный тренерский штат</span>
+	</section>
+	<section class="advantage-section">
+		<div class="container">
+			<div class="row advantage-wrapper">
+				<div class="col-12">
+					<div class="advantage">
+						<div class="advantage__title">
+							<span class="advantage__digits">03</span>
+							<span class="advantage__line"></span>
+							<span class="advantage__text">Преимущества</span>
 						</div>
-						<div class="col-md-4 text-center">
-							<img src="img/honor.png" alt="icon">
-							<span class="advantage__type-upper">Система</span>
-							<span class="advantage__type">Собственная система тренировок</span>
-						</div>
-						<div class="col-md-4 text-center">
-							<img src="img/diagr.png" alt="icon">
-							<span class="advantage__type-upper">Особый подход</span>
-							<span class="advantage__type">Индивидуальный подход к каждому ученику</span>
-						</div>
-						<div class="col-md-6 advantage__half text-center">
-							<img src="img/trener.png" alt="icon">
-							<span class="advantage__type-upper">Тренер</span>
-							<span class="advantage__type">Спаринг под надзором трненера</span>
-						</div>
-						<div class="col-md-6 advantage__half text-center">
-							<img src="img/confer.png" alt="icon">
-							<span class="advantage__type-upper">Группы</span>
-							<span class="advantage__type">Небольшие группы</span>
+						<div class="row advantage__icons">
+							<div class="col-md-4 text-center">
+								<img src="img/business-men-group-icon.png" alt="icon">
+								<span class="advantage__type-upper">Персонал</span>
+								<span class="advantage__type">Профессиональный тренерский штат</span>
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="img/honor.png" alt="icon">
+								<span class="advantage__type-upper">Система</span>
+								<span class="advantage__type">Собственная система тренировок</span>
+							</div>
+							<div class="col-md-4 text-center">
+								<img src="img/diagr.png" alt="icon">
+								<span class="advantage__type-upper">Особый подход</span>
+								<span class="advantage__type">Индивидуальный подход к каждому ученику</span>
+							</div>
+							<div class="col-md-6 advantage__half text-center">
+								<img src="img/trener.png" alt="icon">
+								<span class="advantage__type-upper">Тренер</span>
+								<span class="advantage__type">Спаринг под надзором трненера</span>
+							</div>
+							<div class="col-md-6 advantage__half text-center">
+								<img src="img/confer.png" alt="icon">
+								<span class="advantage__type-upper">Группы</span>
+								<span class="advantage__type">Небольшие группы</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+	<section class="coach-section">
+		<div class="container">
+			<div class="row coach-wrapper">
+				<div class="col-12">
+					<div class="coach">
+						<div class="coach__title">
+							<span class="coach__digits">04</span>
+							<span class="coach__line"></span>
+							<span class="coach__text">Тренер</span>
+						</div>
+						<div class="row coach__inside no-gutters">
+							<div class="col-md-6">
+								<div class="coach__image">
+									<img src="img/trener-core.png" alt="coach">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="coach__name">АНТОН КРАСНОЛУЦКИЙ</div>
+								<div class="coach__date">24.08.1978 г.р.</div>
+								<div class="coach__info">
+									<p>
+										Окончил СПбГУФК (ННФ) им. Лесгафта <br> Кафедра теории и методики бокса.
+									</p>
+									<p>
+										Двухкратный финалист чемпионата России <br> с 2002г. по 2009г.
+									</p>
+									<p>
+										Работал спарринг-партнером у А.Шкаликова, А.Пестряева.
+									</p>
+									<p>
+										Член сборной России по боксу <br> Сават.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row coach__characteristic justify-content-around">
+							<div class="col-md-3 coach__row">
+								<p class="coach__characteristic-number text-center">01</p>
+								<p class="coach__characteristic-text">Большой опыт подготовки профессиональных спортсменов</p>
+							</div>
+							<div class="col-md-3 coach__row">
+								<p class="coach__characteristic-number text-center">02</p>
+								<p class="coach__characteristic-text">7 лет занятия любительским боксом, мастер спорта, 125 боев</p>
+							</div>
+							<div class="col-md-3 coach__row">
+								<p class="coach__characteristic-number text-center">03</p>
+								<p class="coach__characteristic-text">Победитель  всероссийских международных турниров</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="gallery-section">
+		<div class="container">
+			<div class="row gallery-wrapper">
+				<div class="col-12">
+					<div class="gallery">
+						<div class="gallery__title">
+							<span class="gallery__digits">05</span>
+							<span class="gallery__line"></span>
+							<span class="gallery__text">Галерея</span>
+						</div>
+						<div class="gallery__tabs">
+							<div id="tabs-container2">
+								<ul class="tabs-menu">
+									<li class="current2" rel="tab11">Фото</li>
+									<li rel="tab22">Видео</li>
+								</ul>
+								<div class="tab">
+									<h3 class="d_active2 tab_drawer_heading" rel="tab11">Фото</h3>
+									<div id="tab11" class="tab-content">
+										<div class="row gallery__images">
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link"><img src="img/photo/UyujwGoaAEc.jpg"></a>
+											</div>
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/vLNz8RQTwq4.jpg" class="gallery__link"><img src="img/photo/vLNz8RQTwq4.jpg"></a>
+											</div>
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/w8q7sOsHiyI.jpg" class="gallery__link"><img src="img/photo/w8q7sOsHiyI.jpg"></a>
+											</div>
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/x_6c8a944a.jpg" class="gallery__link"><img src="img/photo/x_6c8a944a.jpg"></a>
+											</div>
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/x_758ddcfa.jpg" class="gallery__link"><img src="img/photo/x_758ddcfa.jpg"></a>
+											</div>
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/x_aafab2f6.jpg" class="gallery__link"><img src="img/photo/x_aafab2f6.jpg"></a>
+											</div>
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/x_aafab2f6.jpg" class="gallery__link"><img src="img/photo/x_aafab2f6.jpg"></a>
+											</div>
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/xD_oqNtjmTw.jpg" class="gallery__link"><img src="img/photo/xD_oqNtjmTw.jpg"></a>
+											</div>
+											<div class="col-md-4">
+												<a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link"><img src="img/photo/UyujwGoaAEc.jpg"></a>
+											</div>
+										</div>
+										<div class="row more align-items-center">
+											<div class="col-12 text-center">
+												<a href="#" class="more__link">
+													<img src="img/plus.png" alt="more images">
+													<span>Еще</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<h3 class="d_active2 tab_drawer_heading" rel="tab22">Видео</h3>
+									<div id="tab22" class="tab-content">
+										<p style="color: #fff">TESTTESTTESTTEST</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<div class="contacts__title">контакты</div>
+				</div>
+				<div class="col-md-6">
+					<div class="contacts__address">
+						Адрес
+					</div>
+					<div class="contacts__info">
+						Спортивно-оздоровительный комплекс; <br> набережная Обводного канала; <br> дом 118а (м. Балтийская)
+					</div>
+					<div class="contacts__icon">
+						<a href="#"><img src="img/vk.png" alt="vk"></a>
+					</div>
+				</div>
+				<div class="col-md-6 text-right">
+					<a href="mailto: info@techdocconsult.ru" class="contacts__mail">
+						<img src="img/email.png" alt="mailto">
+						<span>info@techdocconsult.ru</span>
+					</a>
+					<a href="tel: +7(917)-496-82-35" class="contacts__phone">
+						<img src="img/phone.png" alt="phone">
+						<span>+7(917)-496-82-35</span>
+					</a>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-10 text-center">
+					<p class="contacts__title-red">Школа бокса</p>
+					<p class="contacts__title-default">Антона Краснолуцкого</p>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+	</section>
 
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 </body>
 </html>

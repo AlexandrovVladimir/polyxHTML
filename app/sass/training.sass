@@ -1,33 +1,215 @@
 @import 'vars'
 @import 'mixins'
+@import 'tabs'
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab')
+
+.gallery
+  padding-bottom: 60px
+  @include title
+  &__images
+    .col-md-4
+      margin-bottom: 20px
+  &__link
+    display: block
+    img
+      width: 100%
+      height: 270px
+      filter: grayscale(100%)
+      &:hover
+        filter: none
+      //width: 360px
+
+.coach
+  @include title
+  &__inside
+    margin: 50px 0 40px
+  &__name
+    font-size: 26px
+    font-family: "AG Book Pro Bold", sans-serif
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 1.2
+    transform: scale(1, 1.19)
+  &__date
+    font-size: 15px
+    font-family: "AG Book Pro Regular", sans-serif
+    color: rgb(119, 119, 119)
+    line-height: 1.2
+  &__image
+    border-left: 2px solid $title-color
+  &__info
+    padding-top: 25px
+    p
+      font-size: 15px
+      font-family: "AG Book Pro Regular", sans-serif
+      color: rgb(255, 255, 255)
+      line-height: 1.333
+      letter-spacing: 1px
+      //transform: scale(1, 1.19)
+  &__characteristic
+    &-number
+      font-size: 20px
+      font-family: 'Roboto Slab', serif
+      color: rgb(255, 51, 35)
+      line-height: 1
+    &-text
+      font-size: 16px
+      font-family: "AG Book Pro Regular", sans-serif
+      color: rgb(255, 255, 255)
+      line-height: 1.333
 
 .training
   padding: 60px 0
   @include title
+  &__days
+    font-size: 20px
+    font-family: "AG Book Pro Bold", sans-serif
+    color: rgb(254, 254, 254)
+    font-weight: 800
+    text-transform: uppercase
+    padding-top: $mt25
+    span
+      display: inline-block
+      border: 1px solid #626262
+      padding: 15px
+      margin-right: 20px
+      &:last-child
+        margin-right: 0
+  &__start
+    font-size: 20px
+    color: rgb(254, 254, 254)
+    font-family: 'ft40', sans-serif
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 1.25
+    margin-top: 2*$mt25
+  &__group
+    border-left: 2px solid $title-color
+  &__title
+    &-group
+      border-left: 1px solid $title-color
+      font-size: 20px
+      font-family: "AG Book Pro Bold", sans-serif
+      color: rgb(254, 254, 254)
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 1
+      padding-left: 10px
+  &__ticket
+    margin-top: 2.25*$mt25
+    &-text
+      font-size: 17px
+      font-family: "AG Book Pro Regular", sans-serif
+      color: rgb(254, 254, 254)
+      text-transform: uppercase
+      line-height: 1.471
+      letter-spacing: 1.5px
+  &__cost
+    color: $title-color
+    font-size: 24px
+    font-family: "AG Book Pro Bold", sans-serif
+    font-weight: bold
+    line-height: 1.471
+    letter-spacing: 2px
+    margin-left: 15px
 
 .advantage
+  position: relative
+  z-index: 11
   @include title
   &__icons
-    margin: 100px 0
+    margin: 50px 0
   &__type
     display: block
     font-size: 13px
-    //font-family: "AGBookPro"
+    font-family: "AG Book Pro Regular", sans-serif
     color: rgb(255, 255, 255)
-    line-height: 1.615
+    line-height: 1.2
     max-width: 50%
-    margin: 25px auto
+    margin: 20px auto
+    transform: scale(1, 1.19)
     &-upper
       font-size: 16px
-      //font-family: "AGBookPro"
+      font-family: "AG Book Pro Bold", sans-serif
       color: rgb(255, 255, 255)
-      font-weight: bold
+      font-weight: 800
       line-height: 1.2
+      letter-spacing: 1.5px
       display: block
       padding-top: 10px
       text-transform: uppercase
+      transform: scale(1, 1.19)
   &__half
     .advantage__type
       max-width: 30%
 
+.more
+  &__link
+    font-size: 16px
+    font-family: "AG Book Pro Bold", sans-serif
+    color: rgb(255, 51, 35)
+    font-weight: bold
+    line-height: 1.2
+    &:hover
+      color: rgb(255, 51, 35)
+      text-decoration: none
 
+.advantage-section
+  position: relative
+  padding: 100px 0
+  &:before
+    background: url("../img/shines/clouds.png") no-repeat 0 center / cover
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+
+.coach-section
+  position: relative
+  padding: 100px 0
+  &:before
+    background: url("../img/shines/trener.png") no-repeat 100% 60% / cover
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+
+.gallery-section
+  position: relative
+  &:before
+    background: url("../img/shines/gallery.png")
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+
+.training-section
+  position: relative
+  &:before
+    background: url("../img/shines/training.png") no-repeat 0 / contain
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 10
+  &:after
+    background: url("../img/shines/training.png") no-repeat 85% -350px / contain
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 10

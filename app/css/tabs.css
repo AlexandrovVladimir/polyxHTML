@@ -1,0 +1,112 @@
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+#tabs-container, #tabs-container2 {
+  margin-top: 25px;
+  overflow: hidden; }
+
+#tabs-container .tabs-menu,
+#tabs-container2 .tabs-menu {
+  clear: both;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px; }
+
+#tabs-container .tabs-menu li,
+#tabs-container2 .tabs-menu li {
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  min-width: 200px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  color: #e6e6e6;
+  padding: 0 25px;
+  text-transform: uppercase; }
+
+#tabs-container .tabs-menu li.current,
+#tabs-container2 .tabs-menu li.current2 {
+  border: 2px solid #ff3323;
+  position: relative;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #ff3323;
+  color: #e6e6e6;
+  -webkit-box-shadow: 0 0 57px 5px #ff3323;
+          box-shadow: 0 0 57px 5px #ff3323;
+  z-index: 5; }
+  #tabs-container .tabs-menu li.current:hover,
+  #tabs-container2 .tabs-menu li.current2:hover {
+    color: #e6e6e6;
+    text-decoration: none; }
+
+#tabs-container .tab,
+#tabs-container2 .tab {
+  background-color: transparent;
+  min-height: 309px;
+  width: auto; }
+
+#tabs-container2 .tab {
+  min-height: 870px; }
+
+#tabs-container .tab-content,
+#tabs-container2 .tab-content {
+  width: auto;
+  display: none; }
+
+#tabs-container .tab-content p,
+#tabs-container2 .tab-content p {
+  font-size: 16px;
+  padding: 0; }
+
+#tab-1, #tab11 {
+  display: block; }
+
+#tabs-container .tab_last,
+#tabs-container2 .tab_last2 {
+  border-right: 1px solid #333; }
+
+#tabs-container .tab_drawer_heading,
+#tabs-container2 .tab_drawer_heading {
+  display: none; }
+
+#tab1, #tab11,
+#tab2, #tab22,
+#tab3, #tab33,
+#tab4, #tab44 {
+  overflow: hidden; }
+
+@media screen and (max-width: 767px) {
+  #tabs-container .tabs-menu,
+  #tabs-container2 .tabs-menu {
+    display: none; }
+  #tabs-container .tab_drawer_heading,
+  #tabs-container2 .tab_drawer_heading {
+    background-color: #eee;
+    border-top: 1px solid #000;
+    color: #000;
+    margin: 0;
+    padding: 5px 20px;
+    display: block;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  #tabs-container .d_active,
+  #tabs-container2 .d_active2 {
+    background-color: #666;
+    color: #fff; } }

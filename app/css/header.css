@@ -1,11 +1,24 @@
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
 .header {
   background: url("../img/boks-ring-sprot.png") no-repeat center/cover;
   padding: 60px 0;
-  height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative; }
+  .header:before {
+    background: url("../img/shines/top.png") no-repeat 0 center/cover;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; }
   .header__container {
     border-left: 2px solid #fff;
-    min-height: 50%; }
+    min-height: 47.5vh; }
   .header__nav {
     display: -webkit-box;
     display: -webkit-flex;
@@ -27,12 +40,15 @@
       border-bottom: 1px solid transparent;
       display: block;
       font-size: 13px;
+      font-weight: 800;
       color: #fefefe;
-      font-family: AGBookProReg, sans-serif;
-      font-weight: bold;
+      font-family: 'AG Book Pro Bold', sans-serif;
       text-transform: uppercase;
       line-height: 1.2;
-      text-align: center; }
+      text-align: center;
+      -webkit-transform: scale(1, 1.19);
+          -ms-transform: scale(1, 1.19);
+              transform: scale(1, 1.19); }
       .header__nav-link:hover {
         border-bottom: 1px solid #ff3323;
         color: #ffffff;
@@ -46,32 +62,47 @@
     .header__nav-item {
       margin-right: 15px; }
       .header__nav-item-last {
+        letter-spacing: 1px;
         justify-self: flex-end;
         margin-left: auto;
         margin-right: 0; }
         .header__nav-item-last .header__nav-link {
           font-size: 18px;
-          color: white; }
+          font-family: 'AG Book Pro Regular', sans-serif;
+          font-weight: 300;
+          color: white;
+          -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+                  transform: scale(1); }
+          .header__nav-item-last .header__nav-link:hover {
+            border-bottom: 1px solid transparent; }
   .header__title {
     position: absolute;
     bottom: 0;
     left: 60px; }
     .header__title-red {
       font-size: 47px;
-      font-family: AGBookProBold, sans-serif;
+      font-family: 'AG Book Pro Regular', sans-serif;
       color: #ff3323;
+      letter-spacing: 3px;
       text-transform: uppercase;
       line-height: 1.2; }
     .header__title-default {
       display: block;
       font-size: 56px;
-      font-family: AGBookProBold, sans-serif;
+      font-family: 'AG Book Pro Bold', sans-serif;
+      font-weight: 800;
+      letter-spacing: 3px;
       color: white;
       text-transform: uppercase;
       line-height: 1.2;
-      text-align: center; }
+      text-align: center;
+      -webkit-transform: scale(1, 1.19);
+          -ms-transform: scale(1, 1.19);
+              transform: scale(1, 1.19); }
 
 .mouse {
+  cursor: pointer;
   text-align: center;
   position: relative;
   -webkit-animation-name: updown;
@@ -82,7 +113,8 @@
           animation-delay: 1s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  padding-top: 75px; }
+  padding-top: 20px;
+  z-index: 11; }
   .mouse__image {
     cursor: pointer; }
 
