@@ -412,15 +412,17 @@
   .advantage__half .advantage__type {
     max-width: 30%; }
 
-.more__link {
-  font-size: 16px;
-  font-family: "AG Book Pro Bold", sans-serif;
-  color: #ff3323;
-  font-weight: bold;
-  line-height: 1.2; }
-  .more__link:hover {
+.more {
+  height: 24px; }
+  .more__link {
+    font-size: 16px;
+    font-family: "AG Book Pro Bold", sans-serif;
     color: #ff3323;
-    text-decoration: none; }
+    font-weight: bold;
+    line-height: 1.2; }
+    .more__link:hover {
+      color: #ff3323;
+      text-decoration: none; }
 
 .advantage-section {
   position: relative;
