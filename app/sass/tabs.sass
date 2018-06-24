@@ -49,8 +49,10 @@
   background-color: transparent
   min-height: 309px
   width: auto
+
 #tabs-container2 .tab
   min-height: 870px
+
 #tabs-container .tab-content,
 #tabs-container2 .tab-content
   width: auto
@@ -85,16 +87,32 @@
     display: none
   #tabs-container .tab_drawer_heading,
   #tabs-container2 .tab_drawer_heading
-    background-color: #eee
-    border-top: 1px solid #000
-    color: #000
-    margin: 0
-    padding: 5px 20px
-    display: block
+    border: 2px solid #fff
     cursor: pointer
-    user-select: none
+    display: block
+    height: 50px
+    line-height: 50px
+    max-width: 320px
+    margin: auto
+    text-align: center
+    font-size: 15px
+    font-family: "Roboto", sans-serif
+    letter-spacing: 2px
+    color: rgb(230, 230, 230)
+    margin-bottom: 15px
+    padding: 0 25px
+    text-transform: uppercase
   #tabs-container .d_active,
   #tabs-container2 .d_active2
-    background-color: #666
-    color: #fff
+    border: 2px solid $title-color
+    position: relative
+    border-radius: 2px
+    background-color: rgb(255, 51, 35)
+    color: rgb(230, 230, 230)
+    box-shadow: 0 0 57px 5px rgba(255,51,35,1)
+    z-index: 5
+    &:hover
+      color: rgb(230, 230, 230)
+      text-decoration: none
+
 

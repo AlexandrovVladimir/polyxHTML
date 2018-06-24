@@ -95,18 +95,33 @@
     display: none; }
   #tabs-container .tab_drawer_heading,
   #tabs-container2 .tab_drawer_heading {
-    background-color: #eee;
-    border-top: 1px solid #000;
-    color: #000;
-    margin: 0;
-    padding: 5px 20px;
-    display: block;
+    border: 2px solid #fff;
     cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none; }
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    max-width: 320px;
+    margin: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    color: #e6e6e6;
+    margin-bottom: 15px;
+    padding: 0 25px;
+    text-transform: uppercase; }
   #tabs-container .d_active,
   #tabs-container2 .d_active2 {
-    background-color: #666;
-    color: #fff; } }
+    border: 2px solid #ff3323;
+    position: relative;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #ff3323;
+    color: #e6e6e6;
+    -webkit-box-shadow: 0 0 57px 5px #ff3323;
+            box-shadow: 0 0 57px 5px #ff3323;
+    z-index: 5; }
+    #tabs-container .d_active:hover,
+    #tabs-container2 .d_active2:hover {
+      color: #e6e6e6;
+      text-decoration: none; } }

@@ -69,5 +69,11 @@
        of last tab */
     $('#tabs-container2 ul.tabs li').last().addClass("tab_last2");
 
+    /**********************************************************/
 
+    $('.more__link').on("click", function(e) {
+        e.preventDefault();
+        $(this).fadeOut();
+        $(this).parents('.more ').prev().find('.gallery__images-more').css("opacity", "1").css("display", "flex");
+    });
 })();
