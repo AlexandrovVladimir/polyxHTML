@@ -64,6 +64,8 @@
     padding-bottom: 0
 
 @media screen and (max-width: 767px)
+  .burger
+    display: block
   .vertical, .training-section:before, .header__nav
     display: none
   .header__title-default, .header__title-red
@@ -93,7 +95,11 @@
   .more__link
     display: inline-block
     margin-bottom: 50px
-
+  .training__title-group
+    padding-top: 25px
+  .training__group-quote
+    top: 50px
+    width: 100%
 @media screen and (max-width: 575px)
   .header
     padding-left: 15px
@@ -117,3 +123,11 @@
     font-size: 14px
   .contacts__title
     font-size: 16px
+
+@media screen and (max-width: 500px)
+  .training__group-not-working .training__ticket-text
+    font-size: 13px
+  .training__group-not-working .training__title-group
+    font-size: 17px
+  .training__group-not-working .training__cost
+    font-size: 15px

@@ -324,8 +324,28 @@
     margin-top: 50px; }
   .training__group {
     border-left: 2px solid #ff3323; }
+    .training__group-not-working {
+      text-align: center;
+      position: relative; }
+      .training__group-not-working .training__ticket-text {
+        font-size: 21px; }
+      .training__group-not-working .training__cost {
+        font-size: 24px; }
+      .training__group-not-working .training__title-group {
+        border-left: none;
+        padding-left: 0; }
+    .training__group-quote {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      font-size: 12px;
+      font-family: "AG Book Pro Bold", sans-serif;
+      color: #cccccc; }
   .training__title-group {
-    border-left: 1px solid #ff3323;
+    border-left: 2px solid #ff3323;
     font-size: 20px;
     font-family: "AG Book Pro Bold", sans-serif;
     color: #fefefe;
@@ -451,7 +471,8 @@
     z-index: 10; }
 
 .gallery-section {
-  position: relative; }
+  position: relative;
+  padding-top: 60px; }
   .gallery-section:before {
     content: '';
     position: absolute;

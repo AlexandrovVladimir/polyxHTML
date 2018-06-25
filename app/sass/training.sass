@@ -103,9 +103,27 @@
     margin-top: 2*$mt25
   &__group
     border-left: 2px solid $title-color
+    &-not-working
+      text-align: center
+      position: relative
+      .training__ticket-text
+        font-size: 21px
+      .training__cost
+        font-size: 24px
+      .training__title-group
+        border-left: none
+        padding-left: 0
+    &-quote
+      position: absolute
+      top: 25px
+      left: 50%
+      transform: translateX(-50%)
+      font-size: 12px
+      font-family: "AG Book Pro Bold", sans-serif
+      color: #cccccc
   &__title
     &-group
-      border-left: 1px solid $title-color
+      border-left: 2px solid $title-color
       font-size: 20px
       font-family: "AG Book Pro Bold", sans-serif
       color: rgb(254, 254, 254)
@@ -201,6 +219,7 @@
 
 .gallery-section
   position: relative
+  padding-top: 60px
   &:before
     //background: url("../img/shines/gallery.png")
     content: ''

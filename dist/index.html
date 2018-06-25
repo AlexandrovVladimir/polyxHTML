@@ -28,30 +28,64 @@
 
 <body>
 	<header class="header">
+		<div class="vertical">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-12">
+						<ul class="vertical__nav">
+							<li class="vertical__item vertical__item-active"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="container header__container">
 			<div class="row">
 				<div class="col-12">
 					<ul class="header__nav">
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Тренировки</a>
+							<a href="#training-section" class="header__nav-link train-link">Тренировки</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Преимущества</a>
+							<a href="#advantage-section" class="header__nav-link adv-link">Преимущества</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Тренер</a>
+							<a href="#coach-section" class="header__nav-link trener-link">Тренер</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Галерея</a>
+							<a href="#gallery-section" class="header__nav-link gallery-link">Галерея</a>
 						</li>
 						<li class="header__nav-item">
-							<a href="" class="header__nav-link">Контакты</a>
+							<a href="#contacts" class="header__nav-link contacts-link">Контакты</a>
 						</li>
 						<li class="header__nav-item header__nav-item-last">
-							<a href="tel: +7(917)-496-82-35" class="header__nav-link">
+							<a href="tel: +7 (812) 642 57 69" class="header__nav-link">
 								<img src="img/telephone.png" alt="telephone">
-								<span>+7(917)-496-82-35</span>
+								<span>+7-(812)-642-57-69</span>
 							</a>
+						</li>
+					</ul>
+					<div class="burger"><span class="glyphicon glyphicon-align-justify"></span></div>
+					<ul class="adaptive-nav">
+						<li class="adaptive-nav__item">
+							<a href="" class="adaptive-nav__link">Тренировки</a>
+						</li>
+						<li class="adaptive-nav__item">
+							<a href="" class="adaptive-nav__link">Преимущества</a>
+						</li>
+						<li class="adaptive-nav__item">
+							<a href="" class="adaptive-nav__link">Тренер</a>
+						</li>
+						<li class="adaptive-nav__item">
+							<a href="" class="adaptive-nav__link">Галерея</a>
+						</li>
+						<li class="adaptive-nav__item">
+							<a href="" class="adaptive-nav__link">Контакты</a>
 						</li>
 					</ul>
 				</div>
@@ -67,9 +101,24 @@
 		</div>
 	</header>
 
-	<section class="training-section">
+	<section class="training-section" id="training-section">
+		<div class="vertical">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-12">
+						<ul class="vertical__nav">
+							<li class="vertical__item"></li>
+							<li class="vertical__item vertical__item-active"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container">
-			<div class="row no-gutters">
+			<div class="row">
 				<div class="col-12">
 					<div class="training">
 						<div class="training__title">
@@ -104,7 +153,7 @@
 												<div class="training__start">c 19-00</div>
 												<div class="training__ticket">
 													<div class="training__row">
-														<span class="training__ticket-text">Абонемент на месяц:</span><span class="training__cost">7200 руб.</span>
+														<span class="training__ticket-text">Абонемент на месяц:</span><span class="training__cost">1500 руб.</span>
 													</div>
 													<div class="training__row">
 														<span class="training__ticket-text">Стоимость занятия:</span><span class="training__cost">600 руб.</span>
@@ -113,9 +162,22 @@
 											</div>
 										</div>
 									</div>
-									<h3 class="d_active tab_drawer_heading" rel="tab2">Материалы</h3>
+									<h3 class="tab_drawer_heading" rel="tab2">Групповые</h3>
 									<div id="tab2" class="tab-content">
-										<p>Donec semper dictum sem, quis pretium sem malesuada non. Proin venenatis orci vel nisl porta sollicitudin. Pellentesque sit amet massa et orci malesuada facilisis vel vel lectus. Etiam tristique volutpat auctor. Morbi nec massa eget sem ultricies fermentum id ut ligula. Praesent aliquet adipiscing dictum. Suspendisse dignissim dui tortor. Integer faucibus interdum justo, mattis commodo elit tempor id. Quisque ut orci orci, sit amet mattis nulla. Suspendisse quam diam, feugiat at ullamcorper eget, sagittis sed eros. Proin tortor tellus, pulvinar at imperdiet in, egestas sed nisl. Aenean tempor neque ut felis dignissim ac congue felis viverra. </p>
+										<div class="row">
+											<div class="col-md-12">
+												<div class="training__group-not-working">
+													<div class="training__title-group">
+														индивидуальные занятия
+													</div>
+													<div class="training__ticket">
+														<div class="training__row">
+															<span class="training__ticket-text">Стоимость занятия:</span><span class="training__cost">1500 руб.</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -125,7 +187,23 @@
 			</div>
 		</div>
 	</section>
-	<section class="advantage-section">
+	<section class="advantage-section" id="advantage-section">
+		<div class="vertical">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-12">
+						<ul class="vertical__nav">
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item vertical__item-active"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="container">
 			<div class="row advantage-wrapper">
 				<div class="col-12">
@@ -136,17 +214,17 @@
 							<span class="advantage__text">Преимущества</span>
 						</div>
 						<div class="row advantage__icons">
-							<div class="col-md-4 text-center">
+							<div class="col-md-6 col-lg-4 text-center">
 								<img src="img/business-men-group-icon.png" alt="icon">
 								<span class="advantage__type-upper">Персонал</span>
 								<span class="advantage__type">Профессиональный тренерский штат</span>
 							</div>
-							<div class="col-md-4 text-center">
+							<div class="col-md-6 col-lg-4 text-center">
 								<img src="img/honor.png" alt="icon">
 								<span class="advantage__type-upper">Система</span>
 								<span class="advantage__type">Собственная система тренировок</span>
 							</div>
-							<div class="col-md-4 text-center">
+							<div class="col-md-6 col-lg-4 text-center">
 								<img src="img/diagr.png" alt="icon">
 								<span class="advantage__type-upper">Особый подход</span>
 								<span class="advantage__type">Индивидуальный подход к каждому ученику</span>
@@ -156,7 +234,7 @@
 								<span class="advantage__type-upper">Тренер</span>
 								<span class="advantage__type">Спаринг под надзором трненера</span>
 							</div>
-							<div class="col-md-6 advantage__half text-center">
+							<div class="col-md-12 col-lg-6 advantage__half text-center">
 								<img src="img/confer.png" alt="icon">
 								<span class="advantage__type-upper">Группы</span>
 								<span class="advantage__type">Небольшие группы</span>
@@ -167,7 +245,23 @@
 			</div>
 		</div>
 	</section>
-	<section class="coach-section">
+	<section class="coach-section" id="coach-section">
+		<div class="vertical">
+			<div class="container">
+				<div class="row no-gutters">
+					<div class="col-12">
+						<ul class="vertical__nav">
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item"></li>
+							<li class="vertical__item vertical__item-active"></li>
+							<li class="vertical__item"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="container">
 			<div class="row coach-wrapper">
 				<div class="col-12">
@@ -221,7 +315,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="gallery-section">
+	<section class="gallery-section" id="gallery-section">
 		<div class="container">
 			<div class="row gallery-wrapper">
 				<div class="col-12">
@@ -242,32 +336,79 @@
 									<div id="tab11" class="tab-content">
 										<div class="row gallery__images">
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link"><img src="img/photo/UyujwGoaAEc.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
+													<img src="img/photo/UyujwGoaAEc.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/vLNz8RQTwq4.jpg" class="gallery__link"><img src="img/photo/vLNz8RQTwq4.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/vLNz8RQTwq4.jpg" class="gallery__link">
+													<img src="img/photo/vLNz8RQTwq4.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/w8q7sOsHiyI.jpg" class="gallery__link"><img src="img/photo/w8q7sOsHiyI.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/w8q7sOsHiyI.jpg" class="gallery__link">
+													<img src="img/photo/w8q7sOsHiyI.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/x_6c8a944a.jpg" class="gallery__link"><img src="img/photo/x_6c8a944a.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/x_6c8a944a.jpg" class="gallery__link">
+													<img src="img/photo/x_6c8a944a.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/x_758ddcfa.jpg" class="gallery__link"><img src="img/photo/x_758ddcfa.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/x_758ddcfa.jpg" class="gallery__link">
+													<img src="img/photo/x_758ddcfa.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/x_aafab2f6.jpg" class="gallery__link"><img src="img/photo/x_aafab2f6.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/x_aafab2f6.jpg" class="gallery__link">
+													<img src="img/photo/x_aafab2f6.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/x_aafab2f6.jpg" class="gallery__link"><img src="img/photo/x_aafab2f6.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/x_aafab2f6.jpg" class="gallery__link">
+													<img src="img/photo/x_aafab2f6.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/xD_oqNtjmTw.jpg" class="gallery__link"><img src="img/photo/xD_oqNtjmTw.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/xD_oqNtjmTw.jpg" class="gallery__link">
+													<img src="img/photo/xD_oqNtjmTw.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
 											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link"><img src="img/photo/UyujwGoaAEc.jpg"></a>
+												<a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
+													<img src="img/photo/UyujwGoaAEc.jpg">
+													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+												</a>
 											</div>
+                                            <div class="row gallery__images-more">
+                                                <div class="col-md-4">
+                                                    <a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
+                                                        <img src="img/photo/UyujwGoaAEc.jpg">
+                                                        <img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
+                                                        <img src="img/photo/UyujwGoaAEc.jpg">
+                                                        <img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+                                                    </a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
+                                                        <img src="img/photo/UyujwGoaAEc.jpg">
+                                                        <img src="img/zoom.png" alt="zoom" class="gallery__zoom">
+                                                    </a>
+                                                </div>
+                                            </div>
 										</div>
 										<div class="row more align-items-center">
 											<div class="col-12 text-center">
@@ -278,9 +419,30 @@
 											</div>
 										</div>
 									</div>
-									<h3 class="d_active2 tab_drawer_heading" rel="tab22">Видео</h3>
+									<h3 class="tab_drawer_heading" rel="tab22">Видео</h3>
 									<div id="tab22" class="tab-content">
-										<p style="color: #fff">TESTTESTTESTTEST</p>
+										<div class="row gallery__videos">
+											<div class="col-md-6">
+												<iframe width="100%" height="350px"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen>
+												</iframe>
+											</div>
+											<div class="col-md-6">
+												<iframe width="100%" height="350px"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY"frameborder="0" allowfullscreen>
+												</iframe>
+											</div>
+											<div class="col-md-6">
+												<iframe width="100%" height="350px"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY"frameborder="0" allowfullscreen>
+												</iframe>
+											</div>
+											<div class="col-md-6">
+												<iframe width="100%" height="350px"
+													src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen>
+												</iframe>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -291,7 +453,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
@@ -313,9 +475,9 @@
 						<img src="img/email.png" alt="mailto">
 						<span>info@techdocconsult.ru</span>
 					</a>
-					<a href="tel: +7(917)-496-82-35" class="contacts__phone">
+					<a href="tel: +7 (812) 642 57 69" class="contacts__phone">
 						<img src="img/phone.png" alt="phone">
-						<span>+7(917)-496-82-35</span>
+						<span>+7 (812) 642 57 69</span>
 					</a>
 				</div>
 				<div class="col-md-1"></div>
