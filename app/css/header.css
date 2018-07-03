@@ -2,179 +2,124 @@
 @import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
 @import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
 .header {
-  background: url("../img/boks-ring-sprot.png") no-repeat center/cover;
-  padding: 60px 0;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative; }
-  .header:before {
-    background: url("../img/shines/top.png") no-repeat 0 center/cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
-  .header__container {
-    border-left: 2px solid #fff;
-    min-height: 45vh; }
-  .header__nav {
+  background: #19233c;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden; }
+  .header__logo, .header__ether {
+    border-right: 1px solid #29324a;
+    min-height: 80px; }
+  .header__logo {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 30px;
-    -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-            transform: translateY(-10px); }
-    .header__nav-link {
-      border-bottom: 1px solid transparent;
-      display: block;
-      font-size: 13px;
-      font-weight: 800;
-      color: #fefefe;
-      font-family: 'AG Book Pro Bold', sans-serif;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-align: center;
-      -webkit-transform: scale(1, 1.19);
-          -ms-transform: scale(1, 1.19);
-              transform: scale(1, 1.19); }
-      .header__nav-link:hover {
-        border-bottom: 1px solid #ff3323;
-        color: #ffffff;
-        text-decoration: none;
-        -webkit-transition: all 0.3s linear;
-        -o-transition: all 0.3s linear;
-        transition: all 0.3s linear; }
-      .header__nav-link img {
-        margin-right: 15px;
-        height: 31px; }
-    .header__nav-item {
-      margin-right: 15px; }
-      .header__nav-item-last {
-        letter-spacing: 1px;
-        justify-self: flex-end;
-        margin-left: auto;
-        margin-right: 0; }
-        .header__nav-item-last .header__nav-link {
-          font-size: 18px;
-          font-family: 'AG Book Pro Regular', sans-serif;
-          font-weight: 300;
-          color: white;
-          -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-                  transform: scale(1); }
-          .header__nav-item-last .header__nav-link:hover {
-            border-bottom: 1px solid transparent; }
-  .header__title {
-    position: absolute;
-    bottom: 0;
-    left: 60px; }
-    .header__title-red {
-      font-size: 47px;
-      font-family: 'AG Book Pro Regular', sans-serif;
-      color: #ff3323;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      line-height: 1.2; }
-    .header__title-default {
-      display: block;
-      font-size: 56px;
-      font-family: 'AG Book Pro Bold', sans-serif;
-      font-weight: 800;
-      letter-spacing: 3px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 1.5rem; }
+  .header__ether {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2rem; }
+    .header__ether-info {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
       color: white;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-align: center;
-      -webkit-transform: scale(1, 1.19);
-          -ms-transform: scale(1, 1.19);
-              transform: scale(1, 1.19); }
-
-.mouse {
-  cursor: pointer;
-  text-align: center;
-  position: relative;
-  -webkit-animation-name: updown;
-          animation-name: updown;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  padding-top: 20px;
-  z-index: 11; }
-  .mouse__image {
-    cursor: pointer; }
-
-@-webkit-keyframes updown {
-  0% {
-    top: 0; }
-  50% {
-    top: 50px; }
-  100% {
-    top: 0; } }
-
-@keyframes updown {
-  0% {
-    top: 0; }
-  50% {
-    top: 50px; }
-  100% {
-    top: 0; } }
-
-.burger {
-  position: relative;
-  z-index: 12;
-  display: none; }
-  .burger span {
-    color: #ffffff;
-    font-size: 24px;
-    -webkit-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    transition: all 1s linear; }
-
-.adaptive-nav {
-  background: #000;
-  opacity: 0;
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  top: 0;
-  z-index: 25; }
-  .adaptive-nav__item {
-    padding-left: 30%;
-    padding-right: 15px; }
-    .adaptive-nav__item:first-child {
-      padding-top: 50px; }
-  .adaptive-nav__link {
-    display: block;
-    font-size: 13px;
-    font-weight: 700;
-    color: #fefefe;
-    font-family: 'AG Book Pro Bold', sans-serif;
-    text-transform: uppercase;
-    line-height: 1.2;
-    padding-bottom: 15px;
-    -webkit-transform: scale(1, 1.19);
-        -ms-transform: scale(1, 1.19);
-            transform: scale(1, 1.19); }
-  .adaptive-nav__open {
-    display: block;
-    opacity: 1;
-    left: -25%; }
+      line-height: 1.2; }
+      .header__ether-info-text {
+        display: inline-block;
+        font-size: 12px; }
+      .header__ether-info-title {
+        font-weight: bold;
+        text-transform: uppercase; }
+    .header__ether-img img {
+      margin-right: 25px; }
+  .header__etc {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header__etc .middle-list__title {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      color: white;
+      line-height: 1.2; }
+      .header__etc .middle-list__title .header__ether-info-text {
+        font-size: 14px; }
+    .header__etc .middle-list__link {
+      color: #306dbe;
+      display: inline-block;
+      font-size: 12px;
+      font-weight: bold; }
+      .header__etc .middle-list__link:hover {
+        color: #306dbe; }
+  .header__links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .header__links-link {
+      display: block;
+      font-size: 13px; }
+      .header__links-link:before {
+        color: #ffffff;
+        content: '/';
+        padding: 0 5px; }
+      .header__links-link:hover {
+        color: #306dbe;
+        text-decoration: none; }
+    .header__links-item {
+      font-weight: 100; }
+    .header__links .first:before {
+      content: '';
+      padding-left: 0; }
+  .header__language {
+    border: 1px solid #29324a;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    text-align: center; }

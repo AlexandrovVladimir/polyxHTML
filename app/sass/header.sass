@@ -2,144 +2,89 @@
 @import 'mixins'
 @import 'fonts'
 
+
 .header
-  background: url("../img/boks-ring-sprot.png") no-repeat center / cover
-  padding: 60px 0
-  min-height: 100vh
-  overflow: hidden
-  position: relative
-  &:before
-    background: url("../img/shines/top.png") no-repeat 0 center / cover
-    content: ''
-    position: absolute
-    left: 0
-    top: 0
-    width: 100%
-    height: 100%
-    z-index: 10
-  &__container
-    border-left: 2px solid #fff
-    min-height: 45vh
-  &__nav
-    display: flex
-    justify-content: flex-start
-    align-items: center
-    padding-left: 30px
-    transform: translateY(-10px)
-    &-link
-      border-bottom: 1px solid transparent
-      display: block
-      font-size: 13px
-      font-weight: 800
-      color: rgb(254, 254, 254)
-      font-family: 'AG Book Pro Bold', sans-serif
-      text-transform: uppercase
-      line-height: 1.2
-      text-align: center
-      transform: scale(1, 1.19)
-      &:hover
-        border-bottom: 1px solid rgb(255, 51, 35)
-        color: #ffffff
-        text-decoration: none
-        transition: all 0.3s linear
-      img
-        margin-right: 15px
-        height: 31px
-    &-item
-      margin-right: 15px
-      &-last
-        letter-spacing: 1px
-        justify-self: flex-end
-        margin-left: auto
-        margin-right: 0
-        .header__nav-link
-          font-size: 18px
-          font-family: 'AG Book Pro Regular', sans-serif
-          font-weight: 300
-          color: rgb(255, 255, 255)
-          transform: scale(1)
-          &:hover
-            border-bottom: 1px solid transparent
-  &__title
-    position: absolute
-    bottom: 0
-    left: 60px
-    &-red
-      font-size: 47px
-      font-family: 'AG Book Pro Regular', sans-serif
-      color: rgb(255, 51, 35)
-      letter-spacing: 3px
-      text-transform: uppercase
-      line-height: 1.2
-    &-default
-      display: block
-      font-size: 56px
-      font-family: 'AG Book Pro Bold', sans-serif
-      font-weight: 800
-      letter-spacing: 3px
-      color: rgb(255, 255, 255)
-      text-transform: uppercase
-      line-height: 1.2
-      text-align: center
-      transform: scale(1, 1.19)
-
-.mouse
-  cursor: pointer
-  text-align: center
-  position: relative
-  animation-name: updown
-  animation-duration: 2s
-  animation-delay: 1s
-  animation-iteration-count: infinite
-  padding-top: 20px
-  z-index: 11
-  &__image
-    cursor: pointer
-
-@keyframes updown
-  0%
-    top: 0
-  50%
-    top: 50px
-  100%
-    top: 0
-
-.burger
-  position: relative
-  z-index: 12
-  display: none
-  span
-    color: #ffffff
-    font-size: 24px
-    transition: all 1s linear
-
-.adaptive-nav
-  background: #000
-  opacity: 0
-  transition: all 0.5s linear
+  background: #19233c
+  display: flex
+  flex-wrap: nowrap
+  justify-content: flex-start
+  align-items: center
   position: fixed
   width: 100%
-  height: 100%
-  left: -100%
+  left: 0
   top: 0
-  z-index: 25
-  &__item
-    padding-left: 30%
-    padding-right: 15px
-    &:first-child
-      padding-top: 50px
-  &__link
-    display: block
-    font-size: 13px
-    font-weight: 700
-    color: #fefefe
-    font-family: 'AG Book Pro Bold', sans-serif
-    text-transform: uppercase
-    line-height: 1.2
-    padding-bottom: 15px
-    transform: scale(1, 1.19)
-  &__open
-    display: block
-    opacity: 1
-    left: -25%
+  overflow: hidden
+  &__logo, &__ether
+    border-right: 1px solid #29324a
+    min-height: 80px
+  &__logo
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0 1.5rem
+  &__ether
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    padding: 0 2rem
+    &-info
+      font-size: 14px
+      font-family: $default-font
+      color: rgb(255, 255, 255)
+      line-height: 1.2
+      &-text
+        display: inline-block
+        font-size: 12px
+      &-title
+        font-weight: bold
+        text-transform: uppercase
+    &-img
+      img
+        margin-right: 25px
+  &__etc
+    flex-grow: 1
+    padding-left: 2rem
+    padding-right: 1rem
+    display: flex
+    justify-content: space-between
+    .middle-list
+      &__title
+        font-size: 14px
+        font-family: $default-font
+        font-weight: bold
+        color: rgb(255, 255, 255)
+        line-height: 1.2
+        .header__ether-info-text
+          font-size: 14px
+      &__link
+        color: #306dbe
+        display: inline-block
+        font-size: 12px
+        font-weight: bold
+        &:hover
+          color: #306dbe
+  &__links
+    display: flex
+    &-link
+        display: block
+        font-size: 13px
+        &:before
+          color: #ffffff
+          content: '/'
+          padding: 0 5px
+        &:hover
+          color: #306dbe
+          text-decoration: none
+    &-item
+      font-weight: 100
+    .first
+      &:before
+        content: ''
+        padding-left: 0
+  &__language
+    border: $border
+    border-radius: 50px
+    width: 32px
+    height: 32px
+    text-align: center
 

@@ -7,771 +7,203 @@
 @import url(../fonts/ft40/ft40.css);
 @import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
 @import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
-@import url(../fonts/ft40/ft40.css);
-@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
-@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 .header {
-  background: url("../img/boks-ring-sprot.png") no-repeat center/cover;
-  padding: 60px 0;
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative; }
-  .header:before {
-    background: url("../img/shines/top.png") no-repeat 0 center/cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
-  .header__container {
-    border-left: 2px solid #fff;
-    min-height: 45vh; }
-  .header__nav {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 30px;
-    -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-            transform: translateY(-10px); }
-    .header__nav-link {
-      border-bottom: 1px solid transparent;
-      display: block;
-      font-size: 13px;
-      font-weight: 800;
-      color: #fefefe;
-      font-family: 'AG Book Pro Bold', sans-serif;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-align: center;
-      -webkit-transform: scale(1, 1.19);
-          -ms-transform: scale(1, 1.19);
-              transform: scale(1, 1.19); }
-      .header__nav-link:hover {
-        border-bottom: 1px solid #ff3323;
-        color: #ffffff;
-        text-decoration: none;
-        -webkit-transition: all 0.3s linear;
-        -o-transition: all 0.3s linear;
-        transition: all 0.3s linear; }
-      .header__nav-link img {
-        margin-right: 15px;
-        height: 31px; }
-    .header__nav-item {
-      margin-right: 15px; }
-      .header__nav-item-last {
-        letter-spacing: 1px;
-        justify-self: flex-end;
-        margin-left: auto;
-        margin-right: 0; }
-        .header__nav-item-last .header__nav-link {
-          font-size: 18px;
-          font-family: 'AG Book Pro Regular', sans-serif;
-          font-weight: 300;
-          color: white;
-          -webkit-transform: scale(1);
-              -ms-transform: scale(1);
-                  transform: scale(1); }
-          .header__nav-item-last .header__nav-link:hover {
-            border-bottom: 1px solid transparent; }
-  .header__title {
-    position: absolute;
-    bottom: 0;
-    left: 60px; }
-    .header__title-red {
-      font-size: 47px;
-      font-family: 'AG Book Pro Regular', sans-serif;
-      color: #ff3323;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      line-height: 1.2; }
-    .header__title-default {
-      display: block;
-      font-size: 56px;
-      font-family: 'AG Book Pro Bold', sans-serif;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: white;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-align: center;
-      -webkit-transform: scale(1, 1.19);
-          -ms-transform: scale(1, 1.19);
-              transform: scale(1, 1.19); }
-
-.mouse {
-  cursor: pointer;
-  text-align: center;
-  position: relative;
-  -webkit-animation-name: updown;
-          animation-name: updown;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  padding-top: 20px;
-  z-index: 11; }
-  .mouse__image {
-    cursor: pointer; }
-
-@-webkit-keyframes updown {
-  0% {
-    top: 0; }
-  50% {
-    top: 50px; }
-  100% {
-    top: 0; } }
-
-@keyframes updown {
-  0% {
-    top: 0; }
-  50% {
-    top: 50px; }
-  100% {
-    top: 0; } }
-
-.burger {
-  position: relative;
-  z-index: 12;
-  display: none; }
-  .burger span {
-    color: #ffffff;
-    font-size: 24px;
-    -webkit-transition: all 1s linear;
-    -o-transition: all 1s linear;
-    transition: all 1s linear; }
-
-.adaptive-nav {
-  background: #000;
-  opacity: 0;
-  -webkit-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: -100%;
-  top: 0;
-  z-index: 25; }
-  .adaptive-nav__item {
-    padding-left: 30%;
-    padding-right: 15px; }
-    .adaptive-nav__item:first-child {
-      padding-top: 50px; }
-  .adaptive-nav__link {
-    display: block;
-    font-size: 13px;
-    font-weight: 700;
-    color: #fefefe;
-    font-family: 'AG Book Pro Bold', sans-serif;
-    text-transform: uppercase;
-    line-height: 1.2;
-    padding-bottom: 15px;
-    -webkit-transform: scale(1, 1.19);
-        -ms-transform: scale(1, 1.19);
-            transform: scale(1, 1.19); }
-  .adaptive-nav__open {
-    display: block;
-    opacity: 1;
-    left: -25%; }
-
-#tabs-container, #tabs-container2 {
-  margin-top: 25px;
-  overflow: hidden; }
-
-#tabs-container .tabs-menu,
-#tabs-container2 .tabs-menu {
-  clear: both;
+  background: #19233c;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px; }
-
-#tabs-container .tabs-menu li,
-#tabs-container2 .tabs-menu li {
-  border: 2px solid #fff;
-  cursor: pointer;
-  display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  min-width: 200px;
-  text-align: center;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  color: #e6e6e6;
-  padding: 0 25px;
-  text-transform: uppercase; }
-
-#tabs-container .tabs-menu li.current,
-#tabs-container2 .tabs-menu li.current2 {
-  border: 2px solid #ff3323;
-  position: relative;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  background-color: #ff3323;
-  color: #e6e6e6;
-  -webkit-box-shadow: 0 0 57px 5px #ff3323;
-          box-shadow: 0 0 57px 5px #ff3323;
-  z-index: 5; }
-  #tabs-container .tabs-menu li.current:hover,
-  #tabs-container2 .tabs-menu li.current2:hover {
-    color: #e6e6e6;
-    text-decoration: none; }
-
-#tabs-container .tab,
-#tabs-container2 .tab {
-  background-color: transparent;
-  min-height: 309px;
-  width: auto; }
-
-#tabs-container2 .tab {
-  min-height: 870px; }
-
-#tabs-container .tab-content,
-#tabs-container2 .tab-content {
-  width: auto;
-  display: none; }
-
-#tabs-container .tab-content p,
-#tabs-container2 .tab-content p {
-  font-size: 16px;
-  padding: 0; }
-
-#tab-1, #tab11 {
-  display: block; }
-
-#tabs-container .tab_last,
-#tabs-container2 .tab_last2 {
-  border-right: 1px solid #333; }
-
-#tabs-container .tab_drawer_heading,
-#tabs-container2 .tab_drawer_heading {
-  display: none; }
-
-#tab1, #tab11,
-#tab2, #tab22,
-#tab3, #tab33,
-#tab4, #tab44 {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
   overflow: hidden; }
-
-@media screen and (max-width: 767px) {
-  #tabs-container .tabs-menu,
-  #tabs-container2 .tabs-menu {
-    display: none; }
-  #tabs-container .tab_drawer_heading,
-  #tabs-container2 .tab_drawer_heading {
-    border: 2px solid #fff;
-    cursor: pointer;
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    max-width: 320px;
-    margin: auto;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 2px;
-    color: #e6e6e6;
-    margin-bottom: 15px;
-    padding: 0 25px;
-    text-transform: uppercase; }
-  #tabs-container .d_active,
-  #tabs-container2 .d_active2 {
-    border: 2px solid #ff3323;
-    position: relative;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-    background-color: #ff3323;
-    color: #e6e6e6;
-    -webkit-box-shadow: 0 0 57px 5px #ff3323;
-            box-shadow: 0 0 57px 5px #ff3323;
-    z-index: 5; }
-    #tabs-container .d_active:hover,
-    #tabs-container2 .d_active2:hover {
-      color: #e6e6e6;
-      text-decoration: none; } }
-
-.gallery {
-  padding-bottom: 160px; }
-  .gallery__title {
-    color: #ff3323;
-    font-family: 'ft40', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2; }
-  .gallery__digits {
-    letter-spacing: 1px;
-    padding-right: 5px; }
-  .gallery__line {
-    border-top: 1px solid #ff3323;
-    display: inline-block;
-    padding-bottom: 10px;
-    padding-left: 2px;
-    padding-right: 2px;
-    width: 130px; }
-  .gallery__text {
-    font-size: 20px;
-    display: inline-block;
-    color: #ff3323;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 1.2;
-    padding-left: 5px;
-    -webkit-transform: scale(1, 1.19);
-        -ms-transform: scale(1, 1.19);
-            transform: scale(1, 1.19); }
-  .gallery__images .col-md-4 {
-    margin-bottom: 20px; }
-  .gallery__images-more {
-    display: none;
-    opacity: 0;
-    -webkit-transition: height 0.3s linear, opacity 1s linear;
-    -o-transition: height 0.3s linear, opacity 1s linear;
-    transition: height 0.3s linear, opacity 1s linear; }
-  .gallery__link {
-    display: block; }
-    .gallery__link:hover img {
-      -webkit-filter: none;
-              filter: none; }
-    .gallery__link:hover .gallery__zoom {
-      display: block; }
-    .gallery__link img {
-      width: 100%;
-      height: 270px;
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%); }
-  .gallery__videos .col-md-6 {
-    padding-bottom: 15px; }
-  .gallery__zoom {
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 25px !important;
-    height: 25px !important; }
-
-.coach__title {
-  color: #ff3323;
-  font-family: 'ft40', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2; }
-
-.coach__digits {
-  letter-spacing: 1px;
-  padding-right: 5px; }
-
-.coach__line {
-  border-top: 1px solid #ff3323;
-  display: inline-block;
-  padding-bottom: 10px;
-  padding-left: 2px;
-  padding-right: 2px;
-  width: 130px; }
-
-.coach__text {
-  font-size: 20px;
-  display: inline-block;
-  color: #ff3323;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 1.2;
-  padding-left: 5px;
-  -webkit-transform: scale(1, 1.19);
-      -ms-transform: scale(1, 1.19);
-          transform: scale(1, 1.19); }
-
-.coach__inside {
-  margin: 50px 0 40px; }
-
-.coach__name {
-  font-size: 26px;
-  font-family: "AG Book Pro Bold", sans-serif;
-  color: white;
-  font-weight: 800;
-  text-transform: uppercase;
-  line-height: 1.2;
-  -webkit-transform: scale(1, 1.19);
-      -ms-transform: scale(1, 1.19);
-          transform: scale(1, 1.19); }
-
-.coach__date {
-  font-size: 15px;
-  font-family: "AG Book Pro Regular", sans-serif;
-  color: #777777;
-  line-height: 1.2; }
-
-.coach__image {
-  border-left: 2px solid #ff3323; }
-
-.coach__info {
-  padding-top: 25px; }
-  .coach__info p {
-    font-size: 15px;
-    font-family: "AG Book Pro Regular", sans-serif;
-    color: white;
-    line-height: 1.333;
-    letter-spacing: 1px; }
-
-.coach__characteristic-number {
-  font-size: 20px;
-  font-family: 'Roboto Slab', serif;
-  color: #ff3323;
-  line-height: 1; }
-
-.coach__characteristic-text {
-  font-size: 16px;
-  font-family: "AG Book Pro Regular", sans-serif;
-  color: white;
-  line-height: 1.333; }
-
-.training {
-  padding: 60px 0; }
-  .training__title {
-    color: #ff3323;
-    font-family: 'ft40', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2; }
-  .training__digits {
-    letter-spacing: 1px;
-    padding-right: 5px; }
-  .training__line {
-    border-top: 1px solid #ff3323;
-    display: inline-block;
-    padding-bottom: 10px;
-    padding-left: 2px;
-    padding-right: 2px;
-    width: 130px; }
-  .training__text {
-    font-size: 20px;
-    display: inline-block;
-    color: #ff3323;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 1.2;
-    padding-left: 5px;
-    -webkit-transform: scale(1, 1.19);
-        -ms-transform: scale(1, 1.19);
-            transform: scale(1, 1.19); }
-  .training__days {
-    font-size: 20px;
-    font-family: "AG Book Pro Bold", sans-serif;
-    color: #fefefe;
-    font-weight: 800;
-    text-transform: uppercase;
-    padding-top: 25px; }
-    .training__days span {
+  .header__logo, .header__ether {
+    border-right: 1px solid #29324a;
+    min-height: 80px; }
+  .header__logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 1.5rem; }
+  .header__ether {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2rem; }
+    .header__ether-info {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      line-height: 1.2; }
+      .header__ether-info-text {
+        display: inline-block;
+        font-size: 12px; }
+      .header__ether-info-title {
+        font-weight: bold;
+        text-transform: uppercase; }
+    .header__ether-img img {
+      margin-right: 25px; }
+  .header__etc {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header__etc .middle-list__title {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      color: white;
+      line-height: 1.2; }
+      .header__etc .middle-list__title .header__ether-info-text {
+        font-size: 14px; }
+    .header__etc .middle-list__link {
+      color: #306dbe;
       display: inline-block;
-      border: 1px solid #626262;
-      padding: 15px;
-      margin-right: 20px; }
-      .training__days span:last-child {
-        margin-right: 0; }
-  .training__start {
-    font-size: 20px;
-    color: #fefefe;
-    font-family: 'ft40', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1.25;
-    letter-spacing: 1px;
-    margin-top: 50px; }
-  .training__group {
-    border-left: 2px solid #ff3323; }
-    .training__group-not-working {
-      text-align: center;
-      position: relative; }
-      .training__group-not-working .training__ticket-text {
-        font-size: 21px; }
-      .training__group-not-working .training__cost {
-        font-size: 24px; }
-      .training__group-not-working .training__title-group {
-        border-left: none;
-        padding-left: 0; }
-    .training__group-quote {
-      position: absolute;
-      top: 25px;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%);
       font-size: 12px;
-      font-family: "AG Book Pro Bold", sans-serif;
-      color: #cccccc; }
-  .training__title-group {
-    border-left: 2px solid #ff3323;
-    font-size: 20px;
-    font-family: "AG Book Pro Bold", sans-serif;
-    color: #fefefe;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1;
-    padding-left: 10px; }
-  .training__ticket {
-    margin-top: 56.25px; }
-    .training__ticket-text {
-      font-size: 17px;
-      font-family: "AG Book Pro Regular", sans-serif;
-      color: #fefefe;
-      text-transform: uppercase;
-      line-height: 1.471;
-      letter-spacing: 1.5px; }
-  .training__cost {
-    color: #ff3323;
-    font-size: 24px;
-    font-family: "AG Book Pro Bold", sans-serif;
-    font-weight: bold;
-    line-height: 1.471;
-    letter-spacing: 2px;
-    margin-left: 15px; }
-
-.advantage {
-  position: relative;
-  z-index: 11; }
-  .advantage__title {
-    color: #ff3323;
-    font-family: 'ft40', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2; }
-  .advantage__digits {
-    letter-spacing: 1px;
-    padding-right: 5px; }
-  .advantage__line {
-    border-top: 1px solid #ff3323;
-    display: inline-block;
-    padding-bottom: 10px;
-    padding-left: 2px;
-    padding-right: 2px;
-    width: 130px; }
-  .advantage__text {
-    font-size: 20px;
-    display: inline-block;
-    color: #ff3323;
-    font-weight: 800;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 1.2;
-    padding-left: 5px;
-    -webkit-transform: scale(1, 1.19);
-        -ms-transform: scale(1, 1.19);
-            transform: scale(1, 1.19); }
-  .advantage__icons {
-    margin: 50px 0; }
-  .advantage__type {
-    display: block;
-    font-size: 13px;
-    font-family: "AG Book Pro Regular", sans-serif;
-    color: white;
-    line-height: 1.2;
-    max-width: 50%;
-    margin: 20px auto;
-    -webkit-transform: scale(1, 1.19);
-        -ms-transform: scale(1, 1.19);
-            transform: scale(1, 1.19); }
-    .advantage__type-upper {
-      font-size: 16px;
-      font-family: "AG Book Pro Bold", sans-serif;
-      color: white;
-      font-weight: 800;
-      line-height: 1.2;
-      letter-spacing: 1.5px;
+      font-weight: bold; }
+      .header__etc .middle-list__link:hover {
+        color: #306dbe; }
+  .header__links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .header__links-link {
       display: block;
-      padding-top: 10px;
-      text-transform: uppercase;
-      -webkit-transform: scale(1, 1.19);
-          -ms-transform: scale(1, 1.19);
-              transform: scale(1, 1.19); }
-  .advantage__half .advantage__type {
-    max-width: 30%; }
+      font-size: 13px; }
+      .header__links-link:before {
+        color: #ffffff;
+        content: '/';
+        padding: 0 5px; }
+      .header__links-link:hover {
+        color: #306dbe;
+        text-decoration: none; }
+    .header__links-item {
+      font-weight: 100; }
+    .header__links .first:before {
+      content: '';
+      padding-left: 0; }
+  .header__language {
+    border: 1px solid #29324a;
+    -webkit-border-radius: 50px;
+            border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    text-align: center; }
 
-.more {
-  height: 24px; }
-  .more__link {
-    font-size: 16px;
-    font-family: "AG Book Pro Bold", sans-serif;
-    color: #ff3323;
+.content {
+  padding-top: 80px; }
+
+.sell-orders {
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: white;
+  -webkit-box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14);
+  max-height: 390px;
+  margin-top: 15px; }
+  .sell-orders__top {
+    padding: 1rem; }
+  .sell-orders__title {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    color: #38393a;
     font-weight: bold;
-    line-height: 1.2; }
-    .more__link:hover {
-      color: #ff3323;
-      text-decoration: none; }
+    line-height: 1.429; }
+  .sell-orders__td {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: #38393a;
+    line-height: 1.25; }
+  .sell-orders__text {
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    color: #38393a;
+    line-height: 1.538; }
+  .sell-orders tbody td {
+    border: none;
+    font-weight: 300; }
 
-.advantage-section {
-  position: relative;
-  padding: 100px 0; }
-  .advantage-section:before {
-    background: url("../img/shines/clouds.png") no-repeat 0 center/cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
-
-.coach-section {
-  position: relative;
-  padding: 100px 0; }
-  .coach-section:before {
-    background: url("../img/shines/trener.png") no-repeat 100% 60%/cover;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
-
-.gallery-section {
-  position: relative;
-  padding-top: 60px; }
-  .gallery-section:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 150px;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
-
-.training-section {
-  position: relative; }
-  .training-section:before {
-    background: url("../img/shines/training.png") no-repeat 0/contain;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
-  .training-section:after {
-    background: url("../img/shines/training.png") no-repeat 85% -350px/contain;
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
-
-.contacts {
-  background: url("../img/footer.png") no-repeat 0 100%/cover;
-  min-height: 440px;
-  padding-bottom: 50px; }
-  .contacts__title {
-    font-size: 20px;
-    font-family: "AG Book Pro Bold", sans-serif;
-    color: #fefefe;
-    font-weight: 800;
-    line-height: 1.2;
-    padding-top: 15px;
-    padding-bottom: 70px;
-    text-transform: uppercase; }
-    .contacts__title-red {
-      font-size: 16px;
-      font-family: "MyriadProSemiBold", sans-serif;
-      color: #ff3323;
-      text-transform: uppercase;
-      line-height: 1.2;
-      letter-spacing: 1px;
-      margin-bottom: 5px;
-      padding-top: 50px; }
-    .contacts__title-default {
-      border-bottom: 2px solid #727272;
-      font-size: 18px;
-      font-family: "AG Book Pro Bold", sans-serif;
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase;
-      line-height: 1.2;
-      letter-spacing: 1px;
-      margin-bottom: 0;
-      padding-bottom: 10px;
-      -webkit-transform: scale(1, 1.19);
-          -ms-transform: scale(1, 1.19);
-              transform: scale(1, 1.19); }
-  .contacts__address {
-    font-size: 17px;
-    font-family: "AG Book Pro Bold", sans-serif;
-    color: #ff3323;
-    font-weight: 800;
-    text-transform: uppercase;
-    line-height: 1.2;
-    padding-bottom: 10px;
-    -webkit-transform: scale(1, 1.19);
-        -ms-transform: scale(1, 1.19);
-            transform: scale(1, 1.19); }
-  .contacts__info {
+.total {
+  background-color: #d5f1e4;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1rem 2rem; }
+  .total__rating {
+    display: inline-block;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    color: #35a462;
+    line-height: 1.136; }
+  .total__sum {
+    display: inline-block;
     font-size: 16px;
-    font-family: "AG Book Pro Bold", sans-serif;
-    color: white;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    -webkit-transform: scale(1, 1.1);
-        -ms-transform: scale(1, 1.1);
-            transform: scale(1, 1.1); }
-  .contacts__mail, .contacts__phone {
-    display: block; }
-    .contacts__mail:hover, .contacts__phone:hover {
-      text-decoration: none; }
-    .contacts__mail img, .contacts__phone img {
-      margin-right: 5px; }
-    .contacts__mail span, .contacts__phone span {
-      display: inline-block;
-      font-size: 17px;
-      font-family: "AG Book Pro Bold", sans-serif;
-      color: white;
-      font-weight: bold;
-      line-height: 1.2;
-      text-transform: uppercase; }
-  .contacts__mail {
-    margin-bottom: 30px; }
-  .contacts__icon {
-    padding-top: 25px; }
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #38393a;
+    line-height: 1.563; }
+  .total__icon {
+    margin-left: 10px;
+    margin-right: 25px; }
 
-@font-face {
-  font-family: "MyriadProSemiBold";
-  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
-  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal; }
+.buy-orders {
+  margin-top: 0; }
+  .buy-orders .table {
+    margin-bottom: 0; }
+    .buy-orders .table td {
+      border: none; }
+      .buy-orders .table td .sell-orders__td b {
+        font-weight: bold; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -780,202 +212,21 @@
     outline: none; }
 
 html {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif, Arial, sans-serif;
   font-size: 16px;
   height: 100%; }
 
 body {
-  background: #1d1c1c;
+  background-color: #e8e9ec;
   margin: 0;
   padding: 0;
-  position: relative; }
-  body:before {
-    background: url("../img/shines/all.png") 0 0 no-repeat/contain;
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10; }
+  min-height: 100%; }
 
 ul {
   padding: 0;
   margin: 0;
   list-style: none; }
 
-.btn-default {
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  background-color: #ff3323;
-  display: block;
-  width: 260px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 25px;
-  font-family: "MyriadProSemiBold", sans-serif;
-  letter-spacing: 2px;
-  color: #e6e6e6;
-  text-transform: uppercase;
-  -webkit-box-shadow: 0 0 57px 5px #ff3323;
-          box-shadow: 0 0 57px 5px #ff3323;
-  margin: 120px auto;
-  position: relative;
-  z-index: 11; }
-  .btn-default:hover {
-    background-color: #ff3323;
-    color: #e6e6e6;
-    text-decoration: none; }
-
-.container {
-  z-index: 11; }
-
-.vertical {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  z-index: 11; }
-  .vertical__item {
-    background: #fff;
-    height: 2px;
-    margin-left: -webkit-calc(100% - 20px);
-    margin-left: calc(100% - 20px);
-    margin-bottom: 15px;
-    margin-top: 15px;
-    width: 20px; }
-    .vertical__item-active {
-      background: red;
-      -webkit-box-shadow: 0 0 57px 5px #ff3323;
-              box-shadow: 0 0 57px 5px #ff3323;
-      height: 2px;
-      margin-left: -webkit-calc(100% - 40px);
-      margin-left: calc(100% - 40px);
-      width: 40px; }
-
-@media screen and (max-width: 1440px) {
-  .btn-default {
-    margin: 80px auto; }
-  .contacts {
-    padding-top: 75px; }
-  .mouse {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    bottom: 50px;
-    -webkit-animation-name: unset;
-            animation-name: unset; } }
-
-@media screen and (max-width: 1199px) {
-  .header__title-red {
-    font-size: 32px; }
-  .header__title-default {
-    font-size: 45px; }
-  .coach__image img {
-    width: 100%; }
-  .coach__name, .coach__date, .coach__info {
-    padding-left: 1rem; }
-  .coach__characteristic-text {
-    font-size: 14px; }
-  .gallery__link img {
-    height: 220px; } }
-
-@media screen and (max-width: 991px) {
-  .contacts {
-    padding-top: 50px; }
-  .gallery-section:before {
-    background: none; }
-  .header__nav-item-last .header__nav-link span {
-    display: none; }
-  .header__title-default {
-    font-size: 36px; }
-  .training__group img {
-    width: 100%; }
-  .training__ticket-text {
-    font-size: 14px; }
-  .training__cost {
-    font-size: 16px; }
-  .coach__name {
-    font-size: 21px; }
-  .coach__info p {
-    font-size: 14px; }
-  .gallery {
-    padding-bottom: 60px; }
-    .gallery__link img {
-      height: 170px; }
-  #tabs-container2 .tab {
-    min-height: auto; }
-  .advantage-section {
-    padding-bottom: 0; } }
-
-@media screen and (max-width: 767px) {
-  .burger {
-    display: block; }
-  .vertical, .training-section:before, .header__nav {
-    display: none; }
-  .header__title-default, .header__title-red {
-    font-size: 24px; }
-  .coach__name, .coach__date, .coach__info {
-    padding-left: 0; }
-  .coach__name {
-    padding-top: 25px; }
-  .coach__characteristic-text {
-    max-width: 50%;
-    margin: auto;
-    padding-bottom: 1rem; }
-  .coach__characteristic-text {
-    text-align: center; }
-  .gallery {
-    padding-bottom: 0; }
-  .gallery__link img {
-    height: auto; }
-  .contacts__address, .contacts__info, .contacts__icon, .contacts__mail, .contacts__phone {
-    text-align: center; }
-  .contacts__mail {
-    margin-top: 15px; }
-  .training__ticket {
-    padding-bottom: 50px; }
-  .more__link {
-    display: inline-block;
-    margin-bottom: 50px; }
-  .training__title-group {
-    padding-top: 25px; }
-  .training__group-quote {
-    top: 50px;
-    width: 100%; } }
-
-@media screen and (max-width: 575px) {
-  .header {
-    padding-left: 15px;
-    padding-right: 15px; }
-  .header__title {
-    left: 15px; }
-  .header__title-default {
-    display: inline; }
-  .training__line,
-  .advantage__line,
-  .coach__line,
-  .gallery__line {
-    width: 60px;
-    padding-bottom: 5px; }
-  .training__cost {
-    font-size: 12px; }
-  .training__text, .training__digits,
-  .advantage__text, .advantage__digits,
-  .coach__text, .coach__digits,
-  .gallery__text, .gallery__digits {
-    font-size: 14px; }
-  .contacts__title {
-    font-size: 16px; } }
-
-@media screen and (max-width: 500px) {
-  .training__group-not-working .training__ticket-text {
-    font-size: 13px; }
-  .training__group-not-working .training__title-group {
-    font-size: 17px; }
-  .training__group-not-working .training__cost {
-    font-size: 15px; } }
+.table td, .table th {
+  padding: 5px 1rem;
+  line-height: 1; }

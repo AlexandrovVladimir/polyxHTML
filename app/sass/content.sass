@@ -1,0 +1,70 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+
+.content
+  padding-top: 80px
+  
+.sell-orders
+  border-radius: 3px
+  background-color: rgb(255, 255, 255)
+  box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14)
+  max-height: 390px
+  margin-top: 15px
+  &__top
+    padding: 1rem
+  &__title
+    font-size: 14px
+    font-family: $default-font
+    color: $title-color
+    font-weight: bold
+    line-height: 1.429
+  &__td
+    font-size: 12px
+    font-family: $default-font
+    color: $title-color
+    line-height: 1.25
+  &__text
+    font-size: 13px
+    font-family: $default-font
+    color: $title-color
+    line-height: 1.538
+  tbody
+    td
+      border: none
+      font-weight: 300
+
+.total
+  background-color: #d5f1e4
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  padding: 1rem 2rem
+  &__rating
+    display: inline-block
+    font-size: 22px
+    font-family: $default-font
+    color: rgb(53, 164, 98)
+    line-height: 1.136
+  &__sum
+    display: inline-block
+    font-size: 16px
+    font-family: $default-font
+    font-weight: bold
+    color: rgb(56, 57, 58)
+    line-height: 1.563
+  &__icon
+    margin-left: 10px
+    margin-right: 25px
+
+.buy-orders
+  margin-top: 0
+  .table
+    margin-bottom: 0
+    td
+      border: none
+      .sell-orders
+        &__td
+          b
+            font-weight: bold
