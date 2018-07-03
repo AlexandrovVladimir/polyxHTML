@@ -1,0 +1,47 @@
+@import url(../fonts/ft40/ft40.css);
+@import url(../fonts/AG Book Pro Regular/AG Book Pro Regular.css);
+@import url(../fonts/AG Book Pro Bold/AG Book Pro Bold.css);
+.footer {
+  background-color: #19233c;
+  margin-top: 15px;
+  padding: 3rem; }
+  .footer__text {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif; }
+  .footer-list {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; }
+    .footer-list-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+    .footer-list__link {
+      color: #535e73;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      display: block;
+      padding-bottom: 1rem;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+      .footer-list__link:hover {
+        color: #ffffff;
+        text-decoration: none; }
+      .footer-list__link-first {
+        color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding-bottom: 1.5rem; }

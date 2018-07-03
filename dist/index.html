@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<meta property="og:image" content="img/favicon/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -27,472 +28,3084 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="vertical">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-12">
-						<ul class="vertical__nav">
-							<li class="vertical__item vertical__item-active"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+  <header class="header">
+    <div class="header__logo">
+      <a href="#"><img src="img/logo.png" alt="logo"></a>
+    </div>
+    <div class="header__ether">
+      <div class="header__ether-img">
+        <img src="img/logo-ether.png" alt="ether">
+      </div>
+      <div class="header__ether-info">
+        <div class="header__ether-info-title">ETH/BTC</div>
+        <span class="header__ether-info-text">
+          Volume 24h: 75676.95 CCRB <br> 0.00001000 - 0.00001238
+        </span>
+      </div>
+    </div>
+    <div class="header__etc">
+      <div class="header__etc-middle">
+        <div class="middle-list__title">
+          Ethereum
+          <span class="header__ether-info-text">(ETH)</span>
+          <a href="#" class="middle-list__link">details</a>
+          <ul class="header__links">
+            <li class="header__links-item">
+              Site:
+            </li>
+            <li class="header__links-item">
+              <a href="" class="header__links-link first">ethereum.org</a>
+            </li>
+            <li class="header__links-item">
+              <a href="" class="header__links-link">BitcoinTalk</a>
+            </li>
+            <li class="header__links-item">
+              <a href="" class="header__links-link">CoinMarketCup</a>
+            </li>
+            <li class="header__links-item">
+              <a href="" class="header__links-link">Explorer</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__language">
+        <img src="img/language-russ.png" alt="language">
+      </div>
+    </div>
+  </header>
+  <div class="content container-fluid">
+    <div class="row">
+      <div class="col-md-3 pr-0">
+        <div class="left-side-wrapper">
+          <div class="table-responsive sell-orders">
+            <div class="sell-orders__top">
+              <div class="sell-orders__title">
+                Sell Orders
+              </div>
+              <div class="sell-orders__text">
+                Total: 283462.065600 ETH
+              </div>
+            </div>
+            <table class="table table-hover table-striped">
+              <thead>
+              <tr>
+                <td>
+                  <div class="sell-orders__td">
+                    <b>Price,<br> USD</b>
+                  </div>
+                </td>
+                <td>
+                  <div class="sell-orders__td">
+                    <b>Amount,<br> ETH</b>
+                  </div>
+                </td>
+                <td>
+                  <div class="sell-orders__td">
+                    <b>Amount,<br> USD</b>
+                  </div>
+                </td>
+                <td>
+                  <div class="sell-orders__td">
+                    <b>Depth,<br> ETH</b>
+                  </div>
+                </td>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="total">
+            <div class="total__rating">7800.23</div>
+            <img src="img/arrow-up.png" alt="arrow" class="total__icon">
+            <div class="total__sum">$6870.00</div>
+          </div>
+          <div class="table-responsive sell-orders buy-orders">
+            <table class="table">
+              <tbody>
+              <tr>
+                <td>
+                  <div class="sell-orders__td">
+                    <b>Price,<br> USD</b>
+                  </div>
+                </td>
+                <td>
+                  <div class="sell-orders__td">
+                    <b>Amount,<br> ETH</b>
+                  </div>
+                </td>
+                <td>
+                  <div class="sell-orders__td">
+                    <b>Amount,<br> USD</b>
+                  </div>
+                </td>
+                <td>
+                  <div class="sell-orders__td">
+                    <b>Depth,<br> ETH</b>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+              <thead>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              <tr>
+                <td><div class="sell-orders__td">0.002248</div></td>
+                <td><div class="sell-orders__td">20.2356</div></td>
+                <td><div class="sell-orders__td">236.06</div></td>
+                <td><div class="sell-orders__td">0.001248</div></td>
+              </tr>
+              </thead>
+            </table>
+            <div class="sell-orders__top">
+              <div class="sell-orders__title">
+                Buy Orders
+              </div>
+              <div class="sell-orders__text">
+                Total: 283462.065600 ETH
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="graphic"></div>
+        <div class="limit-list">
+          <ul class="nav nav-tabs" id="limitTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="limit-tab" data-toggle="tab" href="#limit" role="tab" aria-controls="limit" aria-selected="true">Limit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="market-tab" data-toggle="tab" href="#market" role="tab" aria-controls="market" aria-selected="false">Market</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="stop-limit-tab" data-toggle="tab" href="#stop-limit" role="tab" aria-controls="stop-limit" aria-selected="false">Stop-Limit</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="limitTabsContent">
+            <div class="tab-pane fade show active" id="limit" role="tabpanel" aria-labelledby="limit-tab">
+              <div class="tab-pane__row">
+                <div class="tab-pane__limit buy">
+                  <div class="buy__title">
+                    <div class="buy__title-text">Buy ETH</div>
+                    <div class="buy__title-digits">
+                      <img src="img/rect-green.png" alt="ETH">
+                      <span>0.000000 ETH</span>
+                    </div>
+                  </div>
+                  <div class="buy__row">
+                    <label for="price" class="buy__label">Цена</label>
+                    <input id="price" type="text" class="buy__input" value="6878.00">
+                    <span class="input-info">ETH</span>
+                  </div>
+                </div>
+                <div class="tab-pane__limit sell">
 
-		<div class="container header__container">
-			<div class="row">
-				<div class="col-12">
-					<ul class="header__nav">
-						<li class="header__nav-item">
-							<a href="#training-section" class="header__nav-link train-link">Тренировки</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#advantage-section" class="header__nav-link adv-link">Преимущества</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#coach-section" class="header__nav-link trener-link">Тренер</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#gallery-section" class="header__nav-link gallery-link">Галерея</a>
-						</li>
-						<li class="header__nav-item">
-							<a href="#contacts" class="header__nav-link contacts-link">Контакты</a>
-						</li>
-						<li class="header__nav-item header__nav-item-last">
-							<a href="tel: +7 (812) 642 57 69" class="header__nav-link">
-								<img src="img/telephone.png" alt="telephone">
-								<span>+7-(812)-642-57-69</span>
-							</a>
-						</li>
-					</ul>
-					<div class="burger"><span class="glyphicon glyphicon-align-justify"></span></div>
-					<ul class="adaptive-nav">
-						<li class="adaptive-nav__item">
-							<a href="" class="adaptive-nav__link">Тренировки</a>
-						</li>
-						<li class="adaptive-nav__item">
-							<a href="" class="adaptive-nav__link">Преимущества</a>
-						</li>
-						<li class="adaptive-nav__item">
-							<a href="" class="adaptive-nav__link">Тренер</a>
-						</li>
-						<li class="adaptive-nav__item">
-							<a href="" class="adaptive-nav__link">Галерея</a>
-						</li>
-						<li class="adaptive-nav__item">
-							<a href="" class="adaptive-nav__link">Контакты</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="header__title">
-				<span class="header__title-red">Школа бокса</span> <br>
-				<span class="header__title-default">Антона Краснолуцкого</span>
-			</div>
-		</div>
-		<a href="#" class="header__button btn-default">Записаться</a>
-		<div class="header__mouse mouse">
-			<img src="img/mouse.png" alt="mouse click" class="mouse__image">
-		</div>
-	</header>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="market" role="tabpanel" aria-labelledby="market-tab">
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders wallet-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Balance</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Reserve</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/btc.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BTC</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/eth.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">ETH</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/bnb.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BNB</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/wawes.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">WAWES</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="stop-limit" role="tabpanel" aria-labelledby="stop-limit-tab">
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders wallet-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Balance</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Reserve</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/btc.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BTC</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/eth.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">ETH</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/bnb.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BNB</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/wawes.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">WAWES</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 pl-0">
+        <div class="currency-list">
+          <ul class="nav nav-tabs" id="currencyTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="btc-tab" data-toggle="tab" href="#btc" role="tab" aria-controls="btc" aria-selected="true">BTC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="eth-tab" data-toggle="tab" href="#eth" role="tab" aria-controls="eth" aria-selected="false">ETH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="usd-tab" data-toggle="tab" href="#usd" role="tab" aria-controls="usd" aria-selected="false">USD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="rur-tab" data-toggle="tab" href="#rur" role="tab" aria-controls="rur" aria-selected="false">RUR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="eur-tab" data-toggle="tab" href="#eur" role="tab" aria-controls="eur" aria-selected="false">EUR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="usdt-tab" data-toggle="tab" href="#usdt" role="tab" aria-controls="usdt" aria-selected="false">USDT</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="currencyTabsContent">
+            <div class="tab-pane fade show active" id="btc" role="tabpanel" aria-labelledby="btc-tab">
+              <div class="tab-pane__row">
+                <input type="text" class="tab-pane__search" placeholder="Search">
+                <i class="material-icons star-default tab-pane__icon">star_border</i>
+              </div>
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders currency-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Price</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Volume</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>24H</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">0.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.06%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-red">-3.60%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="active">
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="eth" role="tabpanel" aria-labelledby="eth-tab">
+              <div class="tab-pane__row">
+                <input type="text" class="tab-pane__search" placeholder="Search">
+                <i class="material-icons star-default tab-pane__icon">star_border</i>
+              </div>
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders currency-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Price</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Volume</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>24H</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">0.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.06%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-red">-3.60%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="usd" role="tabpanel" aria-labelledby="usd-tab">
+              <div class="tab-pane__row">
+                <input type="text" class="tab-pane__search" placeholder="Search">
+                <i class="material-icons star-default tab-pane__icon">star</i>
+              </div>
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders currency-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Price</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Volume</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>24H</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">BBR</div>
+                          <div class="currency-table__fullname">Boolberry</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.003600000</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">0.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.06%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-red">-3.60%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="rur" role="tabpanel" aria-labelledby="rur-tab">
+              <div class="tab-pane__row">
+                <input type="text" class="tab-pane__search" placeholder="Search">
+                <i class="material-icons star-default tab-pane__icon">star</i>
+              </div>
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders currency-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Price</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Volume</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>24H</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">0.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.06%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-red">-3.60%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="eur" role="tabpanel" aria-labelledby="eur-tab">
+              <div class="tab-pane__row">
+                <input type="text" class="tab-pane__search" placeholder="Search">
+                <i class="material-icons star-default tab-pane__icon">star</i>
+              </div>
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders currency-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Price</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Volume</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>24H</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">0.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.06%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-red">-3.60%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="usdt" role="tabpanel" aria-labelledby="usdt-tab">
+              <div class="tab-pane__row">
+                <input type="text" class="tab-pane__search" placeholder="Search">
+                <i class="material-icons star-default tab-pane__icon">star</i>
+              </div>
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders currency-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Price</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Volume</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>24H</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">0.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.06%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-red">-3.60%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">20.00%</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent percent-green">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="currency-table__td">
+                          <i class="material-icons star-default">star_border</i>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <div class="currency-table__name">AKN</div>
+                          <div class="currency-table__fullname">Akencash</div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">6980.0003</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">0.30</div>
+                      </td>
+                      <td>
+                        <div class="currency-table__td">
+                          <span class="percent">00.00</span>
+                        </div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wallet-list">
+          <ul class="nav nav-tabs" id="walletTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="my-wallets-tab" data-toggle="tab" href="#my-wallets" role="tab" aria-controls="my-wallets" aria-selected="true">My wallets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="chatbox-tab" data-toggle="tab" href="#chatbox" role="tab" aria-controls="chatbox" aria-selected="false">Chatbox</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="twiiter-tab" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-selected="false">Twitter</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="walletTabsContent">
+            <div class="tab-pane fade show active" id="my-wallets" role="tabpanel" aria-labelledby="my-wallets-tab">
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders wallet-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Balance</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Reserve</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/btc.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BTC</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/eth.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">ETH</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/bnb.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BNB</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/wawes.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">WAWES</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="chatbox" role="tabpanel" aria-labelledby="chatbox-tab">
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders wallet-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Balance</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Reserve</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/btc.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BTC</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/eth.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">ETH</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/bnb.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BNB</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/wawes.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">WAWES</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="twitter" role="tabpanel" aria-labelledby="twitter-tab">
+              <div class="tab-pane__row">
+                <div class="table-responsive sell-orders wallet-table">
+                  <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                      <td>
+                        <div class="sell-orders__td"></div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Currency</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Balance</b>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="sell-orders__td">
+                          <b>Reserve</b>
+                        </div>
+                      </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/btc.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BTC</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/eth.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">ETH</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/bnb.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">BNB</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="wallet-table__td">
+                          <img src="img/wawes.png" alt="btc">
+                        </div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td wallet-table__td-name">WAWES</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">23.0238002</div>
+                      </td>
+                      <td>
+                        <div class="wallet-table__td">236.0006</div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="clear">-->
+            <!--<a href="#"><img src="img/rect-orange.png" alt="rect">Refill</a>-->
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="orders">
+    <div class="table-responsive sell-orders orders-table">
+      <div class="sell-orders__top">
+        <div class="sell-orders__title">
+          Active Orders
+        </div>
+      </div>
+      <table class="table table-hover table-striped">
+        <thead>
+        <tr>
+          <td>
+            <div class="sell-orders__td">
+              <b>Date</b>
+            </div>
+          </td>
+          <td>
+            <div class="sell-orders__td">
+              <b>Pair</b>
+            </div>
+          </td>
+          <td>
+            <div class="sell-orders__td">
+              <b>Operation</b>
+            </div>
+          </td>
+          <td>
+            <div class="sell-orders__td">
+              <b>Price</b>
+            </div>
+          </td>
+          <td>
+            <div class="sell-orders__td">
+              <b>Amount</b>
+            </div>
+          </td>
+          <td>
+            <div class="sell-orders__td">
+              <b>Amount Original</b>
+            </div>
+          </td>
+          <td>
+            <div class="sell-orders__td">
+              <b>Action</b>
+            </div>
+          </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            <div class="orders-table__td">
+              <span class="orders-table__td-title">ETH/BCT</span>
+            </div>
+          </td>
+          <td>
+            <div class="orders-table__td">
+              2018-07-02 08:00
+            </div>
+          </td>
+          <td>
+            <div class="orders-table__td">LTC/BCT</div>
+          </td>
+          <td>
+            <div class="orders-table__td">
+              <a href="">Sell</a>
+            </div>
+          </td>
+          <td>
+            <div class="orders-table__td">0.030032</div>
+          </td>
+          <td>
+            <div class="orders-table__td">280.030303</div>
+          </td>
+          <td>
+            <div class="orders-table__td">
+              <a href="">Cancel</a>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="trades">
 
-	<section class="training-section" id="training-section">
-		<div class="vertical">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-12">
-						<ul class="vertical__nav">
-							<li class="vertical__item"></li>
-							<li class="vertical__item vertical__item-active"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="training">
-						<div class="training__title">
-							<span class="training__digits">02</span>
-							<span class="training__line"></span>
-							<span class="training__text">Виды тренировок</span>
-						</div>
-						<div class="training__tabs">
-							<div id="tabs-container">
-								<ul class="tabs-menu">
-									<li class="current" rel="tab1">Групповые</li>
-									<li rel="tab2">Индивидуальные</li>
-								</ul>
-								<div class="tab">
-									<h3 class="d_active tab_drawer_heading" rel="tab1">Групповые</h3>
-									<div id="tab1" class="tab-content">
-										<div class="row">
-											<div class="col-md-6">
-												<div class="training__group">
-													<img src="img/group.png" alt="group">
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="training__title-group">
-													групповые занятия
-												</div>
-												<div class="training__days">
-													<span>Пн</span>
-													<span>Ср</span>
-													<span>Пт</span>
-												</div>
-												<div class="training__start">c 19-00</div>
-												<div class="training__ticket">
-													<div class="training__row">
-														<span class="training__ticket-text">Абонемент на месяц:</span><span class="training__cost">1500 руб.</span>
-													</div>
-													<div class="training__row">
-														<span class="training__ticket-text">Стоимость занятия:</span><span class="training__cost">600 руб.</span>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<h3 class="tab_drawer_heading" rel="tab2">Индивидуальные</h3>
-									<div id="tab2" class="tab-content">
-										<div class="row">
-											<div class="col-md-12">
-												<div class="training__group-not-working">
-													<div class="training__title-group">
-														индивидуальные занятия
-													</div>
-													<div class="training__ticket">
-														<div class="training__row">
-															<span class="training__ticket-text">Стоимость занятия:</span><span class="training__cost">1500 руб.</span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="advantage-section" id="advantage-section">
-		<div class="vertical">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-12">
-						<ul class="vertical__nav">
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item vertical__item-active"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+  </div>
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer__text">
+            2018 Polyx Finance LTD <br>
+            All rights reserved
+          </div>
+          <div class="footer__social">
 
-		<div class="container">
-			<div class="row advantage-wrapper">
-				<div class="col-12">
-					<div class="advantage">
-						<div class="advantage__title">
-							<span class="advantage__digits">03</span>
-							<span class="advantage__line"></span>
-							<span class="advantage__text">Преимущества</span>
-						</div>
-						<div class="row advantage__icons">
-							<div class="col-md-6 col-lg-4 text-center">
-								<img src="img/business-men-group-icon.png" alt="icon">
-								<span class="advantage__type-upper">Персонал</span>
-								<span class="advantage__type">Профессиональный тренерский штат</span>
-							</div>
-							<div class="col-md-6 col-lg-4 text-center">
-								<img src="img/honor.png" alt="icon">
-								<span class="advantage__type-upper">Система</span>
-								<span class="advantage__type">Собственная система тренировок</span>
-							</div>
-							<div class="col-md-6 col-lg-4 text-center">
-								<img src="img/diagr.png" alt="icon">
-								<span class="advantage__type-upper">Особый подход</span>
-								<span class="advantage__type">Индивидуальный подход к каждому ученику</span>
-							</div>
-							<div class="col-md-6 advantage__half text-center">
-								<img src="img/trener.png" alt="icon">
-								<span class="advantage__type-upper">Тренер</span>
-								<span class="advantage__type">Спаринг под надзором трненера</span>
-							</div>
-							<div class="col-md-12 col-lg-6 advantage__half text-center">
-								<img src="img/confer.png" alt="icon">
-								<span class="advantage__type-upper">Группы</span>
-								<span class="advantage__type">Небольшие группы</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="coach-section" id="coach-section">
-		<div class="vertical">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-12">
-						<ul class="vertical__nav">
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item"></li>
-							<li class="vertical__item vertical__item-active"></li>
-							<li class="vertical__item"></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+          </div>
+        </div>
+        <div class="col-md-6 footer-list-wrap">
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="" class="footer-list__link footer-list__link-first">Products</a>
+              <a href="" class="footer-list__link">Buy & Sell</a>
+              <a href="" class="footer-list__link">Exchange</a>
+              <a href="" class="footer-list__link">Wallet</a>
+              <a href="" class="footer-list__link">Coin</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="" class="footer-list__link footer-list__link-first">Information</a>
+              <a href="" class="footer-list__link">Customer support</a>
+              <a href="" class="footer-list__link">Fees & Limits</a>
+              <a href="" class="footer-list__link">Referral Program</a>
+              <a href="" class="footer-list__link">Cashback</a>
+              <a href="" class="footer-list__link">About Bitcoin</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="" class="footer-list__link footer-list__link-first">Company</a>
+              <a href="" class="footer-list__link">Contacts</a>
+              <a href="" class="footer-list__link">News</a>
+              <a href="" class="footer-list__link">Employment</a>
+              <a href="" class="footer-list__link">About us</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="" class="footer-list__link footer-list__link-first">Company</a>
+              <a href="" class="footer-list__link">Contacts</a>
+              <a href="" class="footer-list__link">News</a>
+              <a href="" class="footer-list__link">Employment</a>
+              <a href="" class="footer-list__link">About us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </footer>
 
-		<div class="container">
-			<div class="row coach-wrapper">
-				<div class="col-12">
-					<div class="coach">
-						<div class="coach__title">
-							<span class="coach__digits">04</span>
-							<span class="coach__line"></span>
-							<span class="coach__text">Тренер</span>
-						</div>
-						<div class="row coach__inside no-gutters">
-							<div class="col-md-6">
-								<div class="coach__image">
-									<img src="img/trener-core.png" alt="coach">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="coach__name">АНТОН КРАСНОЛУЦКИЙ</div>
-								<div class="coach__date">24.08.1978 г.р.</div>
-								<div class="coach__info">
-									<p>
-										Окончил СПбГУФК (ННФ) им. Лесгафта <br> Кафедра теории и методики бокса.
-									</p>
-									<p>
-										Двухкратный финалист чемпионата России <br> с 2002г. по 2009г.
-									</p>
-									<p>
-										Работал спарринг-партнером у А.Шкаликова, А.Пестряева.
-									</p>
-									<p>
-										Член сборной России по боксу <br> Сават.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="row coach__characteristic justify-content-around">
-							<div class="col-md-3 coach__row">
-								<p class="coach__characteristic-number text-center">01</p>
-								<p class="coach__characteristic-text">Большой опыт подготовки профессиональных спортсменов</p>
-							</div>
-							<div class="col-md-3 coach__row">
-								<p class="coach__characteristic-number text-center">02</p>
-								<p class="coach__characteristic-text">7 лет занятия любительским боксом, мастер спорта, 125 боев</p>
-							</div>
-							<div class="col-md-3 coach__row">
-								<p class="coach__characteristic-number text-center">03</p>
-								<p class="coach__characteristic-text">Победитель  всероссийских международных турниров</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="gallery-section" id="gallery-section">
-		<div class="container">
-			<div class="row gallery-wrapper">
-				<div class="col-12">
-					<div class="gallery">
-						<div class="gallery__title">
-							<span class="gallery__digits">05</span>
-							<span class="gallery__line"></span>
-							<span class="gallery__text">Галерея</span>
-						</div>
-						<div class="gallery__tabs">
-							<div id="tabs-container2">
-								<ul class="tabs-menu">
-									<li class="current2" rel="tab11">Фото</li>
-									<li rel="tab22">Видео</li>
-								</ul>
-								<div class="tab">
-									<h3 class="d_active2 tab_drawer_heading" rel="tab11">Фото</h3>
-									<div id="tab11" class="tab-content">
-										<div class="row gallery__images">
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
-													<img src="img/photo/UyujwGoaAEc.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/vLNz8RQTwq4.jpg" class="gallery__link">
-													<img src="img/photo/vLNz8RQTwq4.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/w8q7sOsHiyI.jpg" class="gallery__link">
-													<img src="img/photo/w8q7sOsHiyI.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/x_6c8a944a.jpg" class="gallery__link">
-													<img src="img/photo/x_6c8a944a.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/x_758ddcfa.jpg" class="gallery__link">
-													<img src="img/photo/x_758ddcfa.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/x_aafab2f6.jpg" class="gallery__link">
-													<img src="img/photo/x_aafab2f6.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/x_aafab2f6.jpg" class="gallery__link">
-													<img src="img/photo/x_aafab2f6.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/xD_oqNtjmTw.jpg" class="gallery__link">
-													<img src="img/photo/xD_oqNtjmTw.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-											<div class="col-md-4">
-												<a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
-													<img src="img/photo/UyujwGoaAEc.jpg">
-													<img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-												</a>
-											</div>
-                                            <div class="row gallery__images-more">
-                                                <div class="col-md-4">
-                                                    <a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
-                                                        <img src="img/photo/UyujwGoaAEc.jpg">
-                                                        <img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
-                                                        <img src="img/photo/UyujwGoaAEc.jpg">
-                                                        <img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <a data-fancybox="gallery" href="img/photo/UyujwGoaAEc.jpg" class="gallery__link">
-                                                        <img src="img/photo/UyujwGoaAEc.jpg">
-                                                        <img src="img/zoom.png" alt="zoom" class="gallery__zoom">
-                                                    </a>
-                                                </div>
-                                            </div>
-										</div>
-										<div class="row more align-items-center">
-											<div class="col-12 text-center">
-												<a href="#" class="more__link">
-													<img src="img/plus.png" alt="more images">
-													<span>Еще</span>
-												</a>
-											</div>
-										</div>
-									</div>
-									<h3 class="tab_drawer_heading" rel="tab22">Видео</h3>
-									<div id="tab22" class="tab-content">
-										<div class="row gallery__videos">
-											<div class="col-md-6">
-												<iframe width="100%" height="350px"
-													src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen>
-												</iframe>
-											</div>
-											<div class="col-md-6">
-												<iframe width="100%" height="350px"
-													src="https://www.youtube.com/embed/tgbNymZ7vqY"frameborder="0" allowfullscreen>
-												</iframe>
-											</div>
-											<div class="col-md-6">
-												<iframe width="100%" height="350px"
-													src="https://www.youtube.com/embed/tgbNymZ7vqY"frameborder="0" allowfullscreen>
-												</iframe>
-											</div>
-											<div class="col-md-6">
-												<iframe width="100%" height="350px"
-													src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen>
-												</iframe>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="contacts" id="contacts">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
-					<div class="contacts__title">контакты</div>
-				</div>
-				<div class="col-md-6">
-					<div class="contacts__address">
-						Адрес
-					</div>
-					<div class="contacts__info">
-						Спортивно-оздоровительный комплекс; <br> набережная Обводного канала; <br> дом 118а (м. Балтийская)
-					</div>
-					<div class="contacts__icon">
-						<a href="#"><img src="img/vk.png" alt="vk"></a>
-					</div>
-				</div>
-				<div class="col-md-6 text-right">
-					<a href="mailto: info@techdocconsult.ru" class="contacts__mail">
-						<img src="img/email.png" alt="mailto">
-						<span>info@techdocconsult.ru</span>
-					</a>
-					<a href="tel: +7 (812) 642 57 69" class="contacts__phone">
-						<img src="img/phone.png" alt="phone">
-						<span>+7 (812) 642 57 69</span>
-					</a>
-				</div>
-				<div class="col-md-1"></div>
-				<div class="col-md-10 text-center">
-					<p class="contacts__title-red">Школа бокса</p>
-					<p class="contacts__title-default">Антона Краснолуцкого</p>
-				</div>
-				<div class="col-md-1"></div>
-			</div>
-		</div>
-	</section>
-
-
-	<script src="js/libs.min.js"></script>
-	<script src="js/common.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>

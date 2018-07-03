@@ -1,0 +1,38 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+.footer
+  background-color: #19233c
+  margin-top: 15px
+  padding: 3rem
+  &__text
+    color: #ffffff
+    font-size: 14px
+    font-weight: bold
+    font-family: $default-font
+  &-list
+    flex: 0 0 25%
+    &-wrap
+      display: flex
+      justify-content: flex-start
+      flex-wrap: wrap
+    &__link
+      color: #535e73
+      font-family: $default-font
+      font-size: 14px
+      display: block
+      padding-bottom: 1rem
+      transition: all 0.3s linear
+      &:hover
+        color: #ffffff
+        text-decoration: none
+      &-first
+        color: #fff
+        font-weight: bold
+        font-size: 18px
+        text-transform: uppercase
+        padding-bottom: 1.5rem
+
+
+

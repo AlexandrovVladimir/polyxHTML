@@ -22,7 +22,8 @@
   width: 100%;
   left: 0;
   top: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   .header__logo, .header__ether {
     border-right: 1px solid #29324a;
     min-height: 80px; }

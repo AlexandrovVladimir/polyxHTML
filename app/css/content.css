@@ -4,16 +4,28 @@
 .content {
   padding-top: 80px; }
 
-.sell-orders {
+.left-side-wrapper {
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  background-color: white;
   -webkit-box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14);
           box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14);
-  max-height: 390px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .left-side-wrapper:hover {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.sell-orders {
+  -webkit-border-top-left-radius: 3px;
+          border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+          border-top-right-radius: 3px;
+  background-color: white;
+  max-height: 400px;
   margin-top: 15px; }
   .sell-orders__top {
-    padding: 1rem; }
+    padding: 10px 1rem; }
   .sell-orders__title {
     font-size: 14px;
     font-family: "Open Sans", sans-serif;
@@ -67,10 +79,54 @@
     margin-right: 25px; }
 
 .buy-orders {
-  margin-top: 0; }
+  margin-top: 0;
+  height: 375px;
+  -webkit-border-bottom-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+          border-bottom-right-radius: 3px; }
   .buy-orders .table {
     margin-bottom: 0; }
+    .buy-orders .table thead tr:nth-of-type(odd) {
+      background: rgba(0, 0, 0, 0.05); }
+    .buy-orders .table thead tr:hover {
+      background: rgba(0, 0, 0, 0.075); }
     .buy-orders .table td {
       border: none; }
       .buy-orders .table td .sell-orders__td b {
         font-weight: bold; }
+
+.graphic {
+  background-color: #fff;
+  height: 457px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  margin-top: 15px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+  .graphic:hover {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.orders {
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  margin-top: 15px;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 50%;
+  margin-right: 7.5px;
+  margin-left: 15px; }
+  .orders-table {
+    margin-top: 0; }
+    .orders-table__td-title {
+      font-weight: bold;
+      font-size: 14px; }
