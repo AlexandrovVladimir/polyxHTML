@@ -22,7 +22,7 @@
     border-bottom: none
     display: flex
     justify-content: space-between
-    flex-wrap: wrap
+    flex-wrap: nowrap
   .nav-tabs .nav-item
     background-color: #fff
   .nav-tabs .nav-item
@@ -39,13 +39,14 @@
     &__row
       position: relative
     &__search
+      background: url("../img/searchicon.png") no-repeat 15px center
       border: none
       color: $title-color
       font-size: 14px
       font-family: $default-font
       width: 100%
       height: 37px
-      padding: 5px 30px 5px
+      padding: 5px 40px 5px
     &__icon
       color: $star-color
       cursor: pointer
@@ -194,6 +195,7 @@
 .limit-list
   background-color: #fff
   height: 360px
+  border-bottom: 1px solid #eceeef
   border-radius: 3px
   box-shadow: 0.53px -0.848px 6px 0px rgba(0, 0, 0, 0.14)
   overflow: hidden
@@ -202,6 +204,8 @@
   transition: all 0.3s linear
   &:hover
     box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19)
+  .tab-content
+    padding-bottom: 15px
   .tab-pane
     &__row
       display: flex
@@ -212,6 +216,8 @@
     &__limit
       flex: 0 0 50%
       padding: 2rem
+  .nav-tabs
+    border-bottom: 1px solid #eceeef
   .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link.active
     background-color: #fff
@@ -219,8 +225,6 @@
     border-top-left-radius: unset
     color: $title-color
     font-weight: bold
-  .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs .nav-link.active
     border-color: #eceeef #eceeef #fff
   .nav-tabs .nav-link
     background-color: #f6f6f8
@@ -229,9 +233,12 @@
     color: $title-color
     font-weight: bold
     padding: 0.5rem 2rem
+    border-right: 1px solid #eceeef
+    border-top: 1px solid #eceeef
 
-.buy
+.buy, .sell
   border-right: 1px solid #eceeef
+  border-bottom: 1px solid #eceeef
   &__title
     display: flex
     justify-content: space-between
@@ -255,12 +262,57 @@
     justify-content: space-between
     flex-wrap: wrap
     align-items: center
+    margin-top: 15px
+    &-right
+      width: 189px
+      justify-content: flex-end
+      margin-left: auto
+      .percent-count
+        background-color: #f1f3f5
+        border-radius: 3px
+        cursor: pointer
+        color: $title-color
+        font-size: 12px
+        font-weight: bold
+        display: inline-block
+        padding: 2.5px 7.5px
+        &:hover
+          background-color: #fff2cc
+        &-active
+          background-color: #fff2cc
   &__label
     color: $title-color
     font-family: $default-font
-    font-size: 14px
+    font-size: 13px
   &__input
+    border: 1px solid #eceeef
+    border-radius: 3px
     color: $title-color
     font-size: 14px
-    padding: 5px
+    padding: 10px
+    width: 189px
+    height: 31px
+  .input-info
+    color: #eceeef
+    font-weight: bold
+    font-size: 12px
+    position: absolute
+    right: 10px
+    top: 50%
+    transform: translateY(-50%)
+  &__btn
+    color: #ffffff
+    border-radius: 3px
+    background-color: rgb(60, 191, 141)
+    height: 36px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    &:hover
+      color: #ffffff
+      text-decoration: none
 
+.sell
+  &__btn
+    background-color: #ffba38

@@ -13,8 +13,7 @@
   width: 100%
   left: 0
   top: 0
-  overflow: hidden
-  z-index: 1
+  z-index: 2
   &__logo, &__ether
     border-right: 1px solid #29324a
     min-height: 80px
@@ -43,7 +42,7 @@
       img
         margin-right: 25px
   &__etc
-    flex-grow: 1
+    flex: 0 0 calc(100% - 358px)
     padding-left: 2rem
     padding-right: 1rem
     display: flex
@@ -88,4 +87,98 @@
     width: 32px
     height: 32px
     text-align: center
+  &__menu
+    display: inline-block
+    justify-self: flex-end
+    margin-left: auto
+    border: 1px solid rgb(51, 61, 89)
+    border-radius: 20px
+    flex: 0 0 116px
+    margin-right: 15px
+    position: relative
+  &__author
+    background: url("../img/author.png") no-repeat 10px center
+    display: flex
+    align-items: center
+    justify-content: center
+    justify-self: flex-end
+    margin-left: auto
+    border: 1px solid rgb(51, 61, 89)
+    border-radius: 20px
+    position: relative
+    width: 130px
+    height: 32px
+    margin-right: 15px
+    padding-left: 30px
+    &-wrap
+      display: flex
+      align-items: center
 
+      flex-grow: 1
+    img
+      margin-left: 5px
+    &-name
+      color: #ffffff
+      font-size: 14px
+
+
+
+
+.burger
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: space-around
+  flex-wrap: wrap
+  text-align: center
+  height: 32px
+  &__open
+    border-radius: 20px
+    border-bottom-right-radius: 0
+    border-bottom-left-radius: 0
+    background-color: #fff
+    color: $title-color
+    .burger__text
+      color: $title-color
+  &__text
+    color: #ffffff
+    font-size: 14px
+    font-family: $default-font
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 1.2
+.navigation
+  position: absolute
+  background-color: #fff
+  right: 0
+  width: 200%
+  opacity: 0
+  visibility: hidden
+  height: 0
+  transition: all 0.1s linear
+  z-index: 1
+  &__link
+    color: $title-color
+    display: flex
+    width: 100%
+    height: 100%
+    align-items: center
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    padding: 0.5rem 4rem
+    &:hover
+      color: rgb(83, 197, 153)
+      text-decoration: none
+    img
+      margin-left: 15px
+  &__open
+    border-radius: 20px
+    border-top-right-radius: 0
+    height: auto
+    opacity: 1
+    visibility: visible
+
+
+.header-responsive
+  display: none

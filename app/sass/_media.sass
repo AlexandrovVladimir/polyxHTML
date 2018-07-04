@@ -1,0 +1,135 @@
+@import 'vars'
+@import 'mixins'
+@import 'fonts'
+
+
+@media screen and (max-width: 1440px) and (min-width: 1281px)
+  .currency-list .nav-tabs .nav-link
+    padding: 0.5rem
+  .buy__label, .sell__label
+    font-size: 10px
+  .buy__input, .sell__input
+    max-width: 150px
+    width: auto
+  .buy__row-right, .sell__row-right
+    width: 150px
+    font-size: 10px
+    .percent-count
+      padding: 2px
+
+@media screen and (max-width: 1280px)
+  .header__etc
+    flex: 0 0 calc(100% - 78px) !important
+  .header__etc-middle, .header__ether
+      display: none
+  .header-responsive
+    z-index: 1
+    display: block
+    top: 80px
+    background-color: #fff
+    .header__etc
+      flex: 0 0 auto !important
+    .header__ether
+      border: none
+    .header__ether-img
+      img
+        margin-right: 0
+    .header__ether-info, .header__etc .middle-list__title,
+    .header__links-link:before
+      color: $title-color
+    .header__etc-middle, .header__ether
+      display: flex
+  .content
+    padding-top: 175px
+  .graphic
+    margin-top: 15px
+  .graphic-order
+    flex: 0 0 100%
+    max-width: 100%
+    order: -1
+  .data-order
+    flex: 0 0 100%
+    max-width: 100%
+    order: -2
+    padding-left: 15px !important
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  .currency-list, .wallet-list
+    flex: 0 0 49.25%
+  .wallet-list, .currency-list
+    height: 100%
+    margin-top: 0
+  .orders-wrap, .trades-wrap
+    width: 100%
+    padding: 0
+  .order-tables
+    flex: 0 0 100%
+    max-width: 100%
+    padding-right: 15px !important
+    .left-side-wrapper
+      width: 100%
+
+@media screen and (max-width: 1199px)
+  .graphic
+    margin-top: 0
+  .footer-list-wrap
+    flex: 0 0 100%
+    max-width: 100%
+    order: -1
+  .col-md-3
+    flex: 0 0 100%
+    max-width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 15px
+    .footer__text
+      .text
+        display: inline-block
+    .footer__social
+      margin-top: 0
+@media screen and (max-width: 767px)
+  .limit-list
+    height: auto
+  .limit-list .tab-pane__limit
+    flex: 0 0 100%
+@media screen and (max-width: 735px)
+  .header-responsive .header__ether
+    padding-left: 15px
+
+@media screen and (max-width: 600px)
+  .currency-list, .wallet-list
+    flex: 0 0 100%
+    max-width: 100%
+
+@media screen and (max-width: 450px)
+  .limit-list .nav-tabs .nav-link
+    padding: 0.5rem 1rem
+    font-size: 14px
+@media screen and (max-width: 425px)
+  .navigation
+    width: 700%
+  .buy__input, .sell__input
+    width: 100%
+  .buy .input-info, .sell .input-info
+    top: 72%
+  .header__menu
+    flex: 0 0 32px
+  .header__author
+    background-position: center
+    width: 32px
+  .header__author-name
+    display: none
+  .header__author img
+    display: none
+  .burger__text
+    display: none
+@media screen and (max-width: 380px)
+  .currency-list .nav-tabs .nav-link, .wallet-list .nav-tabs .nav-link
+    padding: 5px
+@media screen and (max-width: 345px)
+  .wallet-list .nav-tabs .nav-link
+    font-size: 12px
+    padding: 0.5rem

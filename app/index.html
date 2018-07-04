@@ -68,16 +68,81 @@
           </ul>
         </div>
       </div>
+      <div class="header__author-wrap">
+        <div class="header__author">
+          <span class="header__author-name">Joe Deneth</span>
+          <img src="img/caret-white.png" alt="caret" class="header__author-image">
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="burger">
+          <img class="burger__image" src="img/burger.png" alt="burger">
+          <span class="burger__text">Menu</span>
+        </div>
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Buy & Sell</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Exchange</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Wallet</a>
+          </li>
+          <li class="navigation__item">
+            <a href="" class="navigation__link">Coin <img src="img/coin.png" alt="coin"></a>
+          </li>
+        </ul>
+      </div>
       <div class="header__language">
         <img src="img/language-russ.png" alt="language">
       </div>
     </div>
   </header>
+  <div class="header header-responsive">
+    <div class="header__ether">
+      <div class="header__ether-img">
+        <img src="img/ether-logo-black.png" alt="ether">
+      </div>
+      <div class="header__ether-info">
+        <div class="header__ether-info-title">ETH/BTC</div>
+        <span class="header__ether-info-text">
+          Volume 24h: 75676.95 CCRB <br> 0.00001000 - 0.00001238
+        </span>
+      </div>
+      <div class="header__etc">
+        <div class="header__etc-middle">
+          <div class="middle-list__title">
+            Ethereum
+            <span class="header__ether-info-text">(ETH)</span>
+            <a href="#" class="middle-list__link">details</a>
+            <ul class="header__links">
+              <li class="header__links-item">
+                Site:
+              </li>
+              <li class="header__links-item">
+                <a href="" class="header__links-link first">ethereum.org</a>
+              </li>
+              <li class="header__links-item">
+                <a href="" class="header__links-link">BitcoinTalk</a>
+              </li>
+              <li class="header__links-item">
+                <a href="" class="header__links-link">CoinMarketCup</a>
+              </li>
+              <li class="header__links-item">
+                <a href="" class="header__links-link">Explorer</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="content container-fluid">
     <div class="row">
-      <div class="col-md-3 pr-0">
+      <div class="col-md-3 pr-0 order-tables">
         <div class="left-side-wrapper">
-          <div class="table-responsive sell-orders">
+          <div class="sell-orders">
             <div class="sell-orders__top">
               <div class="sell-orders__title">
                 Sell Orders
@@ -86,6 +151,8 @@
                 Total: 283462.065600 ETH
               </div>
             </div>
+          </div>
+          <div class="table-responsive sell-orders">
             <table class="table table-hover table-striped">
               <thead>
               <tr>
@@ -413,6 +480,8 @@
               </tr>
               </thead>
             </table>
+          </div>
+          <div class="table-responsive sell-orders sell-orders-down">
             <div class="sell-orders__top">
               <div class="sell-orders__title">
                 Buy Orders
@@ -421,10 +490,11 @@
                 Total: 283462.065600 ETH
               </div>
             </div>
+
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-6 graphic-order">
         <div class="graphic"></div>
         <div class="limit-list">
           <ul class="nav nav-tabs" id="limitTabs" role="tablist">
@@ -435,7 +505,9 @@
               <a class="nav-link" id="market-tab" data-toggle="tab" href="#market" role="tab" aria-controls="market" aria-selected="false">Market</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="stop-limit-tab" data-toggle="tab" href="#stop-limit" role="tab" aria-controls="stop-limit" aria-selected="false">Stop-Limit</a>
+              <a class="nav-link" id="stop-limit-tab" data-toggle="tab" href="#stop-limit" role="tab" aria-controls="stop-limit" aria-selected="false">
+                Stop-Limit <span class="question">?</span>
+              </a>
             </li>
           </ul>
           <div class="tab-content" id="limitTabsContent">
@@ -450,13 +522,66 @@
                     </div>
                   </div>
                   <div class="buy__row">
-                    <label for="price" class="buy__label">Цена</label>
+                    <label for="price" class="buy__label">Цена:</label>
                     <input id="price" type="text" class="buy__input" value="6878.00">
                     <span class="input-info">ETH</span>
                   </div>
+                  <div class="buy__row">
+                    <label for="count" class="buy__label">Количество:</label>
+                    <input id="count" type="text" class="buy__input" value="">
+                    <span class="input-info">BTC</span>
+                  </div>
+                  <div class="buy__row mt-0">
+                    <div class="buy__row-right">
+                      <span class="percent-count">25%</span>
+                      <span class="percent-count percent-count-active">50%</span>
+                      <span class="percent-count">75%</span>
+                      <span class="percent-count">100%</span>
+                    </div>
+                  </div>
+                  <div class="buy__row">
+                    <label for="summarry" class="buy__label">Сумма:</label>
+                    <input id="summarry" type="text" class="buy__input" value="">
+                    <span class="input-info">ETH</span>
+                  </div>
+                  <div class="buy__row">
+                    <a href="#" class="buy__btn">Buy ETH</a>
+                  </div>
                 </div>
                 <div class="tab-pane__limit sell">
-
+                  <div class="sell__title">
+                    <div class="sell__title-text">Sell ETH</div>
+                    <div class="sell__title-digits">
+                      <img src="img/rect-orange.png" alt="ETH">
+                      <span>0.000000 BTC</span>
+                    </div>
+                  </div>
+                  <div class="sell__row">
+                    <label for="price2" class="sell__label">Цена:</label>
+                    <input id="price2" type="text" class="sell__input" value="6878.00">
+                    <span class="input-info">ETH</span>
+                  </div>
+                  <div class="sell__row">
+                    <label for="count2" class="sell__label">Количество:</label>
+                    <input id="count2" type="text" class="sell__input" value="">
+                    <span class="input-info">BTC</span>
+                  </div>
+                  <div class="sell__row mt-0">
+                    <div class="sell__row-right">
+                      <span class="percent-count">25%</span>
+                      <span class="percent-count percent-count-active">50%</span>
+                      <span class="percent-count">75%</span>
+                      <span class="percent-count">100%</span>
+                    </div>
+                  </div>
+                  <div class="sell__row">
+                    <label for="summarry2" class="buy__label">Сумма:</label>
+                    <input id="summarry2" type="text" class="sell__input" value="">
+                    <span class="input-info">ETH</span>
+                  </div>
+                  <div class="sell__row">
+                    <a href="#" class="sell__btn">Sell ETH</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -655,7 +780,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-3 pl-0">
+      <div class="col-md-3 pl-0 data-order">
         <div class="currency-list">
           <ul class="nav nav-tabs" id="currencyTabs" role="tablist">
             <li class="nav-item">
@@ -693,7 +818,7 @@
                       </td>
                       <td>
                         <div class="sell-orders__td">
-                          <b>Currency</b>
+                          <b>Currency</b> <img src="img/caret.png" alt="caret" class="caret">
                         </div>
                       </td>
                       <td>
@@ -2678,7 +2803,7 @@
                       </td>
                       <td>
                         <div class="sell-orders__td">
-                          <b>Currency</b>
+                          <b>Currency</b><img src="img/caret.png" alt="caret" class="caret">
                         </div>
                       </td>
                       <td>
@@ -2963,171 +3088,655 @@
       </div>
     </div>
   </div>
-  <div class="orders">
-    <div class="table-responsive sell-orders orders-table">
-      <div class="sell-orders__top">
-        <div class="sell-orders__title">
-          Active Orders
+  <section class="wrapper">
+    <div class="orders-wrap">
+      <div class="orders">
+        <div class="sell-orders active-orders">
+          <div class="sell-orders__top">
+            <div class="sell-orders__title">
+              Active Orders
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive sell-orders orders-table">
+          <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Date</b> <img src="img/caret.png" alt="caret" class="caret">
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Pair</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Operation</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Price</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Amount</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Amount Original</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Action</b>
+                </div>
+              </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  <span class="orders-table__td-title">ETH/BCT</span>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="sell-label">Sell</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="sell-label">Sell</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="sell-label">Sell</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  <span class="orders-table__td-title">ETH/BCT</span>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="sell-label">Sell</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="sell-label">Sell</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="sell-label">Sell</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="sell-label">Sell</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="sell-label">Sell</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <table class="table table-hover table-striped">
-        <thead>
-        <tr>
-          <td>
-            <div class="sell-orders__td">
-              <b>Date</b>
-            </div>
-          </td>
-          <td>
-            <div class="sell-orders__td">
-              <b>Pair</b>
-            </div>
-          </td>
-          <td>
-            <div class="sell-orders__td">
-              <b>Operation</b>
-            </div>
-          </td>
-          <td>
-            <div class="sell-orders__td">
-              <b>Price</b>
-            </div>
-          </td>
-          <td>
-            <div class="sell-orders__td">
-              <b>Amount</b>
-            </div>
-          </td>
-          <td>
-            <div class="sell-orders__td">
-              <b>Amount Original</b>
-            </div>
-          </td>
-          <td>
-            <div class="sell-orders__td">
-              <b>Action</b>
-            </div>
-          </td>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <td>
-            <div class="orders-table__td">
-              <span class="orders-table__td-title">ETH/BCT</span>
-            </div>
-          </td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <div class="orders-table__td">
-              2018-07-02 08:00
-            </div>
-          </td>
-          <td>
-            <div class="orders-table__td">LTC/BCT</div>
-          </td>
-          <td>
-            <div class="orders-table__td">
-              <a href="" class="sell-label">Sell</a>
-            </div>
-          </td>
-          <td>
-            <div class="orders-table__td">0.030032</div>
-          </td>
-          <td>
-            <div class="orders-table__td">280.030303</div>
-          </td>
-          <td>
-            <div class="orders-table__td">23.030303</div>
-          </td>
-          <td>
-            <div class="orders-table__td">
-              <a href="">Cancel</a>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="orders-table__td">
-              2018-07-02 08:00
-            </div>
-          </td>
-          <td>
-            <div class="orders-table__td">LTC/BCT</div>
-          </td>
-          <td>
-            <div class="orders-table__td">
-              <a href="" class="sell-label">Sell</a>
-            </div>
-          </td>
-          <td>
-            <div class="orders-table__td">0.030032</div>
-          </td>
-          <td>
-            <div class="orders-table__td">280.030303</div>
-          </td>
-          <td>
-            <div class="orders-table__td">23.030303</div>
-          </td>
-          <td>
-            <div class="orders-table__td">
-              <a href="">Cancel</a>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="orders-table__td">
-              2018-07-02 08:00
-            </div>
-          </td>
-          <td>
-            <div class="orders-table__td">LTC/BCT</div>
-          </td>
-          <td>
-            <div class="orders-table__td">
-              <a href="" class="sell-label">Sell</a>
-            </div>
-          </td>
-          <td>
-            <div class="orders-table__td">0.030032</div>
-          </td>
-          <td>
-            <div class="orders-table__td">280.030303</div>
-          </td>
-          <td>
-            <div class="orders-table__td">23.030303</div>
-          </td>
-          <td>
-            <div class="orders-table__td">
-              <a href="">Cancel</a>
-            </div>
-          </td>
-        </tr>
-        </tbody>
-      </table>
     </div>
-  </div>
-  <div class="trades">
+    <div class="trades-wrap">
+      <div class="trades">
+        <div class="sell-order recent-trades">
+          <div class="sell-orders__top recent-trades__title">
+            <div class="sell-orders__title">
+              Recent Trades
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive sell-orders trades-table">
+          <table class="table table-hover table-striped">
+            <thead>
+            <tr>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Date</b> <img src="img/caret.png" alt="caret" class="caret">
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Pair</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Operation</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Price</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Amount</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Amount Original</b>
+                </div>
+              </td>
+              <td>
+                <div class="sell-orders__td">
+                  <b>Action</b>
+                </div>
+              </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  <span class="orders-table__td-title">ETH/BCT</span>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="buy-label">Buy</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="buy-label">Buy</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="buy-label">Buy</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  <span class="orders-table__td-title">ETH/BCT</span>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="buy-label">Buy</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="buy-label">Buy</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="buy-label">Buy</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="buy-label">Buy</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="orders-table__td">
+                  2018-07-02 08:00
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">LTC/BCT</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <span href="" class="buy-label">Buy</span>
+                </div>
+              </td>
+              <td>
+                <div class="orders-table__td">0.030032</div>
+              </td>
+              <td>
+                <div class="orders-table__td">280.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">23.030303</div>
+              </td>
+              <td>
+                <div class="orders-table__td">
+                  <a href="">Cancel</a>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </div>
   <footer class="footer">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
           <div class="footer__text">
-            2018 Polyx Finance LTD <br>
-            All rights reserved
+            <span class="text">2018 Polyx Finance LTD</span>
+            <span class="text">All rights reserved</span>
           </div>
           <div class="footer__social">
-
+            <a href="#" class="footer__social-link">
+              <img src="img/Facebook.svg" alt="facebook">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="img/Twitter.svg" alt="twitter">
+            </a>
+            <a href="#" class="footer__social-link">
+              <img src="img/Telegram.svg" alt="Telegram">
+            </a>
           </div>
         </div>
         <div class="col-md-6 footer-list-wrap">
@@ -3169,7 +3778,17 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-3"></div>
+        <div class="col-md-3">
+          <div class="footer__text text-right">
+            <span class="text">Madrid, Spain, Marina 16-18,</span> <span class="text">08005 VAT ES B-64355506</span>
+          </div>
+          <div class="footer__text text-right">
+            <span class="green">9422</span><span class="footer__text">Active Traders</span>
+          </div>
+          <div class="footer__text text-right">
+            <span class="orange">2221</span><span class="footer__text">BTC 24h Volume</span>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
