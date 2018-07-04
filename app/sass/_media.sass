@@ -86,15 +86,32 @@
     justify-content: space-between
     padding-bottom: 15px
     .footer__text
+      margin-top: 0 !important
       .text
         display: inline-block
     .footer__social
       margin-top: 0
 @media screen and (max-width: 767px)
+  .col-md-3 .footer__text .text
+    display: block
+  .footer-list
+    flex: 0 0 50%
+    &__text
+      display: block
+  .col-md-3 .footer__text, .col-md-3 .footer__social
+    flex: 0 0 100%
+    text-align: left !important
+  .content
+    padding-top: 195px
   .limit-list
     height: auto
   .limit-list .tab-pane__limit
     flex: 0 0 100%
+  .header-responsive .header__etc
+    flex: 0 0 100% !important
+  .orders-table__td, .trades-table__td
+    font-size: 10px
+
 @media screen and (max-width: 735px)
   .header-responsive .header__ether
     padding-left: 15px
@@ -103,11 +120,15 @@
   .currency-list, .wallet-list
     flex: 0 0 100%
     max-width: 100%
-
+    height: auto
+  .currency-list
+    margin-bottom: 15px
 @media screen and (max-width: 450px)
   .limit-list .nav-tabs .nav-link
     padding: 0.5rem 1rem
     font-size: 14px
+  .header-responsive .header__etc
+    display: none
 @media screen and (max-width: 425px)
   .navigation
     width: 700%

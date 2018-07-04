@@ -22,7 +22,7 @@
   -webkit-border-top-right-radius: 3px;
           border-top-right-radius: 3px;
   background-color: white;
-  max-height: 390px;
+  max-height: 350px;
   margin-top: 15px; }
   .sell-orders__top {
     padding: 14px 1rem; }
@@ -86,7 +86,7 @@
 
 .buy-orders {
   margin-top: 0;
-  height: 251px;
+  height: 210px;
   -webkit-border-bottom-left-radius: 3px;
           border-bottom-left-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;

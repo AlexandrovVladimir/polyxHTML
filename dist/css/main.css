@@ -721,7 +721,7 @@
   -webkit-border-top-right-radius: 3px;
           border-top-right-radius: 3px;
   background-color: white;
-  max-height: 390px;
+  max-height: 350px;
   margin-top: 15px; }
   .sell-orders__top {
     padding: 14px 1rem; }
@@ -785,7 +785,7 @@
 
 .buy-orders {
   margin-top: 0;
-  height: 251px;
+  height: 210px;
   -webkit-border-bottom-left-radius: 3px;
           border-bottom-left-radius: 3px;
   -webkit-border-bottom-right-radius: 3px;
@@ -1184,19 +1184,45 @@ input:-moz-placeholder {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-bottom: 15px; }
-    .col-md-3 .footer__text .text {
-      display: inline-block; }
+    .col-md-3 .footer__text {
+      margin-top: 0 !important; }
+      .col-md-3 .footer__text .text {
+        display: inline-block; }
     .col-md-3 .footer__social {
       margin-top: 0; } }
 
 @media screen and (max-width: 767px) {
+  .col-md-3 .footer__text .text {
+    display: block; }
+  .footer-list {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+    .footer-list__text {
+      display: block; }
+  .col-md-3 .footer__text, .col-md-3 .footer__social {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    text-align: left !important; }
+  .content {
+    padding-top: 195px; }
   .limit-list {
     height: auto; }
   .limit-list .tab-pane__limit {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
-            flex: 0 0 100%; } }
+            flex: 0 0 100%; }
+  .header-responsive .header__etc {
+    -webkit-box-flex: 0 !important;
+    -webkit-flex: 0 0 100% !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important; }
+  .orders-table__td, .trades-table__td {
+    font-size: 10px; } }
 
 @media screen and (max-width: 735px) {
   .header-responsive .header__ether {
@@ -1208,12 +1234,17 @@ input:-moz-placeholder {
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-    max-width: 100%; } }
+    max-width: 100%;
+    height: auto; }
+  .currency-list {
+    margin-bottom: 15px; } }
 
 @media screen and (max-width: 450px) {
   .limit-list .nav-tabs .nav-link {
     padding: 0.5rem 1rem;
-    font-size: 14px; } }
+    font-size: 14px; }
+  .header-responsive .header__etc {
+    display: none; } }
 
 @media screen and (max-width: 425px) {
   .navigation {
