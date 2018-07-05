@@ -73,6 +73,32 @@
           <span class="header__author-name">Joe Deneth</span>
           <img src="img/caret-white.png" alt="caret" class="header__author-image">
         </div>
+        <ul class="author-list">
+          <li class="author-list__item">
+            <a href="" class="author-list__link">Верификация аккаунта</a>
+          </li>
+          <li class="author-list__item">
+            <a href="" class="author-list__link">Личные данные</a>
+          </li>
+          <li class="author-list__item">
+            <a href="" class="author-list__link">Реферальная программа</a>
+          </li>
+          <li class="author-list__item">
+            <a href="" class="author-list__link">Cashback</a>
+          </li>
+          <li class="author-list__item">
+            <a href="" class="author-list__link">История торгов</a>
+          </li>
+          <li class="author-list__item">
+            <a href="" class="author-list__link">Новости</a>
+          </li>
+          <li class="author-list__item">
+            <a href="" class="author-list__link">Двухфакторная авторазация</a>
+          </li>
+          <li class="author-list__item">
+            <a href="" class="author-list__link">Выйти</a>
+          </li>
+        </ul>
       </div>
       <div class="header__menu">
         <div class="burger">
@@ -97,6 +123,12 @@
       <div class="header__language">
         <img src="img/language-russ.png" alt="language">
       </div>
+      <ul class="navigation-language">
+        <li class="navigation-language__item">
+          <a href="" class="navigation-language__link">RU</a>
+          <a href="" class="navigation-language__link">EN</a>
+        </li>
+      </ul>
     </div>
   </header>
   <div class="header header-responsive">
@@ -151,35 +183,37 @@
                 Total: 283462.065600 ETH
               </div>
             </div>
-            <table class="table">
-              <thead>
-              <tr>
-                <td>
-                  <div class="sell-orders__td">
-                    <b>Price,<br> USD</b>
-                  </div>
-                </td>
-                <td>
-                  <div class="sell-orders__td">
-                    <b>Amount,<br> ETH</b>
-                  </div>
-                </td>
-                <td>
-                  <div class="sell-orders__td">
-                    <b>Amount,<br> USD</b>
-                  </div>
-                </td>
-                <td>
-                  <div class="sell-orders__td">
-                    <b>Depth,<br> ETH</b>
-                  </div>
-                </td>
-              </tr>
-              </thead>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                <tr>
+                  <td>
+                    <div class="sell-orders__td">
+                      <b>Price,<br> USD</b>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sell-orders__td">
+                      <b>Amount,<br> ETH</b>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sell-orders__td">
+                      <b>Amount,<br> USD</b>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="sell-orders__td">
+                      <b>Depth,<br> ETH</b>
+                    </div>
+                  </td>
+                </tr>
+                </thead>
+              </table>
+            </div>
 
-            </table>
           </div>
-          <div class="table-responsive sell-orders">
+          <div class="table-responsive sell-orders sell-orders-up">
             <table class="table table-hover table-striped">
               <!--<thead>-->
               <!--<tr>-->
@@ -586,10 +620,10 @@
                   </div>
                   <div class="buy__row mt-0">
                     <div class="buy__row-right">
-                      <span class="percent-count">25%</span>
-                      <span class="percent-count percent-count-active">50%</span>
-                      <span class="percent-count">75%</span>
-                      <span class="percent-count">100%</span>
+                      <button class="percent-count">25%</button>
+                      <button class="percent-count percent-count-active">50%</button>
+                      <button class="percent-count">75%</button>
+                      <button class="percent-count">100%</button>
                     </div>
                   </div>
                   <div class="buy__row">
@@ -598,7 +632,7 @@
                     <span class="input-info">ETH</span>
                   </div>
                   <div class="buy__row">
-                    <a href="#" class="buy__btn">Buy ETH</a>
+                    <button class="buy__btn">Buy ETH</button>
                   </div>
                 </div>
                 <div class="tab-pane__limit sell">
@@ -621,10 +655,10 @@
                   </div>
                   <div class="sell__row mt-0">
                     <div class="sell__row-right">
-                      <span class="percent-count">25%</span>
-                      <span class="percent-count percent-count-active">50%</span>
-                      <span class="percent-count">75%</span>
-                      <span class="percent-count">100%</span>
+                      <button class="percent-count">25%</button>
+                      <button class="percent-count percent-count-active">50%</button>
+                      <button class="percent-count">75%</button>
+                      <button class="percent-count">100%</button>
                     </div>
                   </div>
                   <div class="sell__row">
@@ -633,7 +667,7 @@
                     <span class="input-info">ETH</span>
                   </div>
                   <div class="sell__row">
-                    <a href="#" class="sell__btn">Sell ETH</a>
+                    <button class="sell__btn">Sell ETH</button>
                   </div>
                 </div>
               </div>
@@ -862,7 +896,7 @@
                 <i class="material-icons star-default tab-pane__icon">star_border</i>
               </div>
               <div class="tab-pane__row">
-                <div class="table-responsive sell-orders currency-table">
+                <div class="table-responsive sell-orders currency-table" style="overflow-x: hidden;">
                   <table class="table table-hover table-striped">
                     <thead>
                     <tr>
@@ -991,7 +1025,7 @@
                     <tr class="active">
                       <td>
                         <div class="currency-table__td">
-                          <i class="material-icons star-default">star_border</i>
+                          <i class="material-icons star-default">star</i>
                         </div>
                       </td>
                       <td>
@@ -1188,7 +1222,7 @@
             <div class="tab-pane fade" id="eth" role="tabpanel" aria-labelledby="eth-tab">
               <div class="tab-pane__row">
                 <input type="text" class="tab-pane__search" placeholder="Search">
-                <i class="material-icons star-default tab-pane__icon">star_border</i>
+              <i class="material-icons star-default tab-pane__icon">star_border</i>
               </div>
               <div class="tab-pane__row">
                 <div class="table-responsive sell-orders currency-table">
@@ -3150,7 +3184,52 @@
               Active Orders
             </div>
           </div>
-          <table class="table">
+
+          <!--<table class="table">-->
+            <!--<thead>-->
+            <!--<tr>-->
+              <!--<td>-->
+                <!--<div class="sell-orders__td caret-wrap">-->
+                  <!--<b>Date</b> <img src="img/caret.png" alt="caret" class="caret">-->
+                <!--</div>-->
+              <!--</td>-->
+              <!--<td>-->
+                <!--<div class="sell-orders__td">-->
+                  <!--<b>Pair</b>-->
+                <!--</div>-->
+              <!--</td>-->
+              <!--<td>-->
+                <!--<div class="sell-orders__td">-->
+                  <!--<b>Operation</b>-->
+                <!--</div>-->
+              <!--</td>-->
+              <!--<td>-->
+                <!--<div class="sell-orders__td">-->
+                  <!--<b>Price</b>-->
+                <!--</div>-->
+              <!--</td>-->
+              <!--<td>-->
+                <!--<div class="sell-orders__td">-->
+                  <!--<b>Amount</b>-->
+                <!--</div>-->
+              <!--</td>-->
+              <!--<td>-->
+                <!--<div class="sell-orders__td">-->
+                  <!--<b>Amount Original</b>-->
+                <!--</div>-->
+              <!--</td>-->
+              <!--<td>-->
+                <!--<div class="sell-orders__td">-->
+                  <!--<b>Action</b>-->
+                <!--</div>-->
+              <!--</td>-->
+            <!--</tr>-->
+            <!--</thead>-->
+          <!--</table>-->
+
+        </div>
+        <div class="table-responsive sell-orders orders-table">
+          <table class="table table-hover table-striped">
             <thead>
             <tr>
               <td>
@@ -3190,49 +3269,6 @@
               </td>
             </tr>
             </thead>
-          </table>
-        </div>
-        <div class="table-responsive sell-orders orders-table">
-          <table class="table table-hover table-striped">
-            <!--<thead>-->
-            <!--<tr>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Date</b> <img src="img/caret.png" alt="caret" class="caret">-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Pair</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Operation</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Price</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Amount</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Amount Original</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Action</b>-->
-                <!--</div>-->
-              <!--</td>-->
-            <!--</tr>-->
-            <!--</thead>-->
             <tbody>
             <tr>
               <td>
@@ -3272,7 +3308,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="sell-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3301,7 +3337,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="sell-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3330,7 +3366,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="sell-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3372,7 +3408,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="sell-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3401,7 +3437,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="sell-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3430,7 +3466,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="sell-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3459,7 +3495,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="sell-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3488,7 +3524,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="sell-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3506,9 +3542,51 @@
             </div>
           </div>
         </div>
-        <table class="table">
-          <thead>
-          <tr style="background: #fff;">
+        <!--<table class="table table-responsive">-->
+          <!--<thead>-->
+          <!--<tr style="background: #fff;">-->
+            <!--<td>-->
+              <!--<div class="sell-orders__td caret-wrap">-->
+                <!--<b>Date</b> <img src="img/caret.png" alt="caret" class="caret">-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+              <!--<div class="sell-orders__td">-->
+                <!--<b>Pair</b>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+              <!--<div class="sell-orders__td">-->
+                <!--<b>Operation</b>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+              <!--<div class="sell-orders__td">-->
+                <!--<b>Price</b>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+              <!--<div class="sell-orders__td">-->
+                <!--<b>Amount</b>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+              <!--<div class="sell-orders__td">-->
+                <!--<b>Amount Original</b>-->
+              <!--</div>-->
+            <!--</td>-->
+            <!--<td>-->
+              <!--<div class="sell-orders__td">-->
+                <!--<b>Action</b>-->
+              <!--</div>-->
+            <!--</td>-->
+          <!--</tr>-->
+          <!--</thead>-->
+        <!--</table>-->
+        <div class="table-responsive sell-orders trades-table">
+          <table class="table table-hover table-striped">
+            <thead>
+          <tr>
             <td>
               <div class="sell-orders__td">
                 <b>Date</b> <img src="img/caret.png" alt="caret" class="caret">
@@ -3546,48 +3624,6 @@
             </td>
           </tr>
           </thead>
-        </table>
-        <div class="table-responsive sell-orders trades-table">
-          <table class="table table-hover table-striped">
-            <!--<thead>-->
-            <!--<tr>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Date</b> <img src="img/caret.png" alt="caret" class="caret">-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Pair</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Operation</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Price</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Amount</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Amount Original</b>-->
-                <!--</div>-->
-              <!--</td>-->
-              <!--<td>-->
-                <!--<div class="sell-orders__td">-->
-                  <!--<b>Action</b>-->
-                <!--</div>-->
-              <!--</td>-->
-            <!--</tr>-->
-            <!--</thead>-->
             <tbody>
             <tr>
               <td>
@@ -3627,7 +3663,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="buy-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3656,7 +3692,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="buy-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3685,7 +3721,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="buy-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3727,7 +3763,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="buy-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3756,7 +3792,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="buy-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3785,7 +3821,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="buy-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3814,7 +3850,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="buy-label">Cancel</button>
                 </div>
               </td>
             </tr>
@@ -3843,7 +3879,7 @@
               </td>
               <td>
                 <div class="orders-table__td">
-                  <a href="">Cancel</a>
+                  <button class="buy-label">Cancel</button>
                 </div>
               </td>
             </tr>

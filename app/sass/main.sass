@@ -86,11 +86,21 @@ ul
 svg
   width: 25px
   height: 25px
-//::-webkit-scrollbar
-//	width: 3.5px
-//::-webkit-scrollbar-thumb
-//	background-color: #d3d4da
-//	outline: 1px solid slategrey
+button.sell-label, button.buy-label
+  border: none
+  cursor: pointer
+  &:focus
+    outline: none
+.caret-wrap
+  display: flex
+  align-items: center
+  justify-content: flex-start
+::-webkit-scrollbar, ::-webkit-scrollbar:horizontal
+	width: 3.5px
+  height: 3.5px
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar:horizontal
+	background-color: #e6e6e6
+	outline: 1px solid #eceeef
 
 /* webkit solution */
 ::-webkit-input-placeholder

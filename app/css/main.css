@@ -96,7 +96,8 @@
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    position: relative; }
     .header__etc .middle-list__title {
       font-size: 14px;
       font-family: "Open Sans", sans-serif;
@@ -136,6 +137,7 @@
     border: 1px solid #29324a;
     -webkit-border-radius: 50px;
             border-radius: 50px;
+    cursor: pointer;
     width: 32px;
     height: 32px;
     text-align: center; }
@@ -172,11 +174,12 @@
     -webkit-border-radius: 20px;
             border-radius: 20px;
     position: relative;
-    width: 130px;
+    min-width: 130px;
     height: 32px;
     margin-right: 15px;
     padding-left: 30px; }
     .header__author-wrap {
+      cursor: pointer;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -185,15 +188,59 @@
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center;
+      position: relative;
       -webkit-box-flex: 1;
       -webkit-flex-grow: 1;
           -ms-flex-positive: 1;
               flex-grow: 1; }
     .header__author img {
-      margin-left: 5px; }
+      margin-left: 5px;
+      margin-right: 5px; }
     .header__author-name {
       color: #ffffff;
       font-size: 14px; }
+
+.author-list {
+  position: absolute;
+  background-color: #fff;
+  top: 35px;
+  right: 10px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  z-index: 1;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 1rem; }
+  .author-list-open {
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    height: auto;
+    opacity: 1;
+    visibility: visible; }
+  .author-list__link {
+    color: #38393a;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5rem; }
+    .author-list__link:hover {
+      color: #53c599;
+      text-decoration: none; }
+    .author-list__link img {
+      margin-left: 15px; }
 
 .burger {
   cursor: pointer;
@@ -243,7 +290,9 @@
   -webkit-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  z-index: 1; }
+  z-index: 1;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5); }
   .navigation__link {
     color: #38393a;
     display: -webkit-box;
@@ -270,6 +319,52 @@
             border-radius: 20px;
     -webkit-border-top-right-radius: 0;
             border-top-right-radius: 0;
+    height: auto;
+    opacity: 1;
+    visibility: visible; }
+
+.navigation-language {
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  position: absolute;
+  background-color: #fff;
+  top: 35px;
+  right: 1rem;
+  width: 50px;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  z-index: 1;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5); }
+  .navigation-language__link {
+    color: #38393a;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .navigation-language__link:hover {
+      color: #53c599;
+      text-decoration: none; }
+    .navigation-language__link img {
+      margin-left: 15px; }
+  .navigation-language__open {
     height: auto;
     opacity: 1;
     visibility: visible; }
@@ -485,9 +580,14 @@
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      min-width: 20px;
+      min-height: 20px; }
       .wallet-list .wallet-table__td-name {
         font-weight: bold; }
+      .wallet-list .wallet-table__td img {
+        width: 20px;
+        height: 20px; }
     .wallet-list .wallet-table .table thead tr td .sell-orders__td {
       height: 32px;
       display: -webkit-box;
@@ -631,14 +731,20 @@
             align-items: center;
     margin-top: 15px; }
     .buy__row-right, .sell__row-right {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       width: 189px;
-      -webkit-box-pack: end;
-      -webkit-justify-content: flex-end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      margin-left: auto; }
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-left: auto;
+      margin-top: 1px; }
       .buy__row-right .percent-count, .sell__row-right .percent-count {
         background-color: #f1f3f5;
+        border: none;
         -webkit-border-radius: 3px;
                 border-radius: 3px;
         cursor: pointer;
@@ -649,6 +755,8 @@
         padding: 2.5px 7.5px; }
         .buy__row-right .percent-count:hover, .sell__row-right .percent-count:hover {
           background-color: #fff2cc; }
+        .buy__row-right .percent-count:focus, .sell__row-right .percent-count:focus {
+          outline: none; }
         .buy__row-right .percent-count-active, .sell__row-right .percent-count-active {
           background-color: #fff2cc; }
   .buy__label, .sell__label {
@@ -675,6 +783,7 @@
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
   .buy__btn, .sell__btn {
+    border: none;
     color: #ffffff;
     -webkit-border-radius: 3px;
             border-radius: 3px;
@@ -696,6 +805,8 @@
     .buy__btn:hover, .sell__btn:hover {
       color: #ffffff;
       text-decoration: none; }
+    .buy__btn:focus, .sell__btn:focus {
+      outline: none; }
 
 .sell__btn {
   background-color: #ffba38; }
@@ -714,6 +825,9 @@
   .left-side-wrapper:hover {
     -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.currency-list .sell-orders {
+  max-height: 378px; }
 
 .sell-orders {
   -webkit-border-top-left-radius: 3px;
@@ -751,10 +865,10 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
@@ -1040,6 +1154,34 @@ svg {
   width: 25px;
   height: 25px; }
 
+button.sell-label, button.buy-label {
+  border: none;
+  cursor: pointer; }
+  button.sell-label:focus, button.buy-label:focus {
+    outline: none; }
+
+.caret-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+::-webkit-scrollbar, ::-webkit-scrollbar:horizontal {
+  width: 3.5px;
+    width-height: 3.5px; }
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar:horizontal {
+  background-color: #e6e6e6;
+  outline: 1px solid #eceeef; }
+
 /* webkit solution */
 ::-webkit-input-placeholder {
   color: #c0c0c2; }
@@ -1061,6 +1203,10 @@ input:-moz-placeholder {
     font-size: 10px; }
     .buy__row-right .percent-count, .sell__row-right .percent-count {
       padding: 2px; } }
+
+@media screen and (max-width: 1505px) and (min-width: 1280px) {
+  .currency-list .table td, .table th {
+    padding: 5px !important; } }
 
 @media screen and (max-width: 1280px) {
   .header__etc {
@@ -1192,6 +1338,12 @@ input:-moz-placeholder {
       margin-top: 0; } }
 
 @media screen and (max-width: 767px) {
+  .footer {
+    padding: 2rem 1rem 1rem; }
+  .col-md-3 .footer__text {
+    margin-top: 15px !important; }
+  .footer__social {
+    padding-top: 15px; }
   .col-md-3 .footer__text .text {
     display: block; }
   .footer-list {
@@ -1228,6 +1380,14 @@ input:-moz-placeholder {
   .header-responsive .header__ether {
     padding-left: 15px; } }
 
+@media screen and (max-width: 767px) and (min-width: 601px) {
+  .currency-list .nav-tabs .nav-link,
+  .currency-list .sell-orders tbody td,
+  .currency-list .table td, .currency-list .table th, .wallet-list .nav-tabs .nav-link,
+  .wallet-list .sell-orders tbody td,
+  .wallet-list .table td, .wallet-list .table th {
+    padding: 2px !important; } }
+
 @media screen and (max-width: 600px) {
   .currency-list, .wallet-list {
     -webkit-box-flex: 0;
@@ -1240,6 +1400,8 @@ input:-moz-placeholder {
     margin-bottom: 15px; } }
 
 @media screen and (max-width: 450px) {
+  .buy__row-right, .sell__row-right {
+    width: 100%; }
   .limit-list .nav-tabs .nav-link {
     padding: 0.5rem 1rem;
     font-size: 14px; }
@@ -1247,6 +1409,12 @@ input:-moz-placeholder {
     display: none; } }
 
 @media screen and (max-width: 425px) {
+  .currency-list .nav-tabs .nav-link,
+  .currency-list .sell-orders tbody td,
+  .currency-list .table td, .currency-list .table th, .wallet-list .nav-tabs .nav-link,
+  .wallet-list .sell-orders tbody td,
+  .wallet-list .table td, .wallet-list .table th {
+    padding: 5px !important; }
   .navigation {
     width: 700%; }
   .buy__input, .sell__input {
@@ -1271,6 +1439,11 @@ input:-moz-placeholder {
 @media screen and (max-width: 380px) {
   .currency-list .nav-tabs .nav-link, .wallet-list .nav-tabs .nav-link {
     padding: 5px; } }
+
+@media screen and (max-width: 366px) {
+  .header__etc {
+    padding-right: 15px;
+    padding-left: 0; } }
 
 @media screen and (max-width: 345px) {
   .wallet-list .nav-tabs .nav-link {

@@ -4,10 +4,335 @@
     <list default="true" id="923088a2-15c7-4a2a-8dc1-250b1b81e87a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/content.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/content.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/eth.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/eth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/$pac.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/abt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/act.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ada.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/adx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ae.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/agi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/agrs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/aion.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/amb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/amp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ant.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/appc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ardr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/arn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ary.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ast.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/atm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/auto.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bcc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bcd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bcn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bco.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bcpt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bdl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bela.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bix.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/blcn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/blk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/block.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/blz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bnb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bnt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bnty.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bos.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bpt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/brd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/btc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/btcd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/btcp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/btcz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/btg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/btm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/bts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/btx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/burst.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cdn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cdt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/chips.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cix.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/clam.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cloak.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cmt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cnd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cnx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cny.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cob.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cred.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/crpt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ctr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/cvc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/data.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dbc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dcn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dcr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/default.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dent.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dew.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dgb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dgd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dlt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dnt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/doge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/drgn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dta.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/dtr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ebst.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/edg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/edo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/edoge.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/elf.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/elix.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ella.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/emc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/emc2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/eng.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/enj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/eos.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/equa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/etc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/eth.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ethos.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/etn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/etp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/eur.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/evx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/exmo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/exp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/fair.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/fct.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/fil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/fldc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/flo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/fsn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ftc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/fuel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/fun.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/game.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gas.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gbp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gbx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gbyte.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/generic.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gno.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gnt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/grc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/grs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gto.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gvt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/gxs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/hpb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/hsr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/html.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/huc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/hush.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/icn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/icx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ignis.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ins.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ion.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/iop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/iost.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/iot.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/itc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/jnt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/jpy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/kcs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/kin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/kmd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/knc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/krb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/lbc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/lend.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/lkk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/lrc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/lsk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ltc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/lun.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/maid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mana.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mcap.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mco.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mda.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/med.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/miota.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mkr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mln.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mnx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mod.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mona.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mth.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mtl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/music.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/mzc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nano.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nas.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nav.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ncash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ndz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nebl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/neo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/neos.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ngc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nlc2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nlg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nmc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nuls.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nxs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/nxt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/oax.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/omg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/omni.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ost.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/part.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/pasl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/pay.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/pink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/pirl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/pivx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/plr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/poa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/poe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/poly.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/pot.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/powr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ppc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ppp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ppt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/prl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/pura.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/qash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/qiwi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/qlc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/qrl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/qsp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/qtum.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/r.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rads.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rcn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rdd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rdn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rep.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/req.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rhoc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ric.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rise.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rlc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rpx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rub.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/rvn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/salt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/san.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sbd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sberbank.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sky.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/slr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sls.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/smart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sngls.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/snm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/snt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/spank.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sphtx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/srn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/start.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/steem.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/storj.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/storm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/strat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sub.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/sys.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/taas.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/tau.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/tel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/theta.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/tix.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/tkn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/tnb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/tnc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/tnt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/trig.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/trx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/tzc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ubq.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/unity.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/usd.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/usdt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/utk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/ven.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/veri.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/via.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/vib.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/vibe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/vivo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/vrc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/vtc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/wabi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/waves.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/wax.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/wgr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/wings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/wpr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/wtc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xas.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xbc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xby.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xcp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xdn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xem.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xlm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xmg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xmr.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xmy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xpa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xpm.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xrp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xtz.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xuc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xvc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xvg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/xzc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/yoyow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/zcl.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/zec.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/zen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/zil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icons/zrx.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/wawes.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/wawes.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/_media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/_media.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/content.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/content.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/tabs.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/tabs.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/common.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,49 +345,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46586347">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="25">
-                  <caret line="3510" column="38" selection-start-line="3510" selection-start-column="38" selection-end-line="3510" selection-end-column="38" />
+                <state relative-caret-position="167">
+                  <caret line="669" column="28" selection-start-line="669" selection-start-column="28" selection-end-line="669" selection-end-column="28" />
                   <folding>
-                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#div#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#1;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#2;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#ul#0;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#thead#0;n#table#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#7;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#8;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#9;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#thead#0;n#table#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#tr#6;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
                 </state>
@@ -72,12 +382,15 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.sass" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+        <leaf>
+          <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/js/common.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1009">
-                  <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+                <state relative-caret-position="96">
+                  <caret line="4" selection-start-line="4" selection-end-line="4" />
+                  <folding>
+                    <marker date="1530803908696" expanded="true" signature="1149:1965" ph="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -85,44 +398,17 @@
           <file leaf-file-name="header.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/sass/header.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="146">
-                  <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+                <state relative-caret-position="-169">
+                  <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_media.sass" pinned="false" current-in-tab="true">
+          <file leaf-file-name="_media.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_vars.sass" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/sass/_vars.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="48">
-                  <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="content.sass" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/sass/content.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="74">
-                  <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="footer.sass" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/sass/footer.sass">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="864">
-                  <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+                <state relative-caret-position="385">
+                  <caret line="177" column="19" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -130,8 +416,35 @@
           <file leaf-file-name="tabs.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/sass/tabs.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="50">
-                  <caret line="205" column="73" selection-start-line="203" selection-start-column="2" selection-end-line="205" selection-end-column="73" />
+                <state relative-caret-position="359">
+                  <caret line="326" column="19" selection-start-line="326" selection-start-column="19" selection-end-line="326" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="content.sass" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/sass/content.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="168">
+                  <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.sass" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="385">
+                  <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+            <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="786" column="20" selection-start-line="786" selection-start-column="20" selection-end-line="786" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -149,36 +462,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header__etc</find>
-      <find>nav</find>
-      <find>16</find>
-      <find>.header</find>
-      <find>sell-orders</find>
-      <find>283462.065600</find>
-      <find>sell</find>
-      <find>grap</find>
-      <find>.buy-orders</find>
-      <find>top</find>
-      <find>left-side-wrapper</find>
-      <find>252</find>
-      <find>ETH/BCT</find>
-      <find>active</find>
-      <find>active order</find>
-      <find>green</find>
-      <find>table-responsive sell-orders trades-table</find>
-      <find>.orders</find>
-      <find>respo</find>
-      <find>marina</find>
-      <find>2018 Polyx Finance LTD</find>
-      <find>.wallet-list</find>
-      <find>graphic</find>
-      <find>recent trades</find>
-      <find>order-tables</find>
-      <find>Amount</find>
+      <find>.total</find>
+      <find>active o</find>
+      <find>percent-count</find>
       <find>buy</find>
-      <find>curre</find>
+      <find>recent trades</find>
+      <find>bur</find>
+      <find>navi</find>
+      <find>wrap</find>
+      <find>&amp;__authpor</find>
+      <find>BTC</find>
+      <find>col-md-3 pl-0 data-order</find>
+      <find>4</find>
+      <find>language</find>
+      <find>navigation</find>
+      <find>&amp;__etc</find>
+      <find>wallet</find>
+      <find>currency-list</find>
+      <find>sell</find>
+      <find>media</find>
+      <find>langu</find>
+      <find>author</find>
+      <find>star_border</find>
       <find>active orders</find>
-      <find>1199</find>
+      <find>Cancel</find>
+      <find>sell-orders</find>
+      <find>23.030303</find>
+      <find>cancel</find>
+      <find>Buy ETH</find>
+      <find>sell eth</find>
+      <find>.buy__btn, .sell__btn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,14 +514,16 @@
         <option value="$PROJECT_DIR$/app/sass/training.sass" />
         <option value="$PROJECT_DIR$/app/sass/mixins.sass" />
         <option value="$PROJECT_DIR$/app/sass/_vars.sass" />
-        <option value="$PROJECT_DIR$/app/js/common.js" />
-        <option value="$PROJECT_DIR$/app/sass/tabs.sass" />
+        <option value="$PROJECT_DIR$/app/sass/footer.sass" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-3/main.css" />
+        <option value="$PROJECT_DIR$/app/sass/_media.sass" />
+        <option value="$PROJECT_DIR$/app/sass/content.sass" />
         <option value="$PROJECT_DIR$/app/sass/header.sass" />
         <option value="$PROJECT_DIR$/app/sass/main.sass" />
-        <option value="$PROJECT_DIR$/app/sass/footer.sass" />
-        <option value="$PROJECT_DIR$/app/sass/content.sass" />
+        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/sass/_media.sass" />
+        <option value="$PROJECT_DIR$/app/sass/tabs.sass" />
+        <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-2/main.css" />
       </list>
     </option>
   </component>
@@ -239,10 +554,12 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="6" />
-    <option name="y" value="56" />
-    <option name="width" value="1915" />
+    <option name="x" value="-7" />
+    <option name="width" value="1684" />
     <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -258,17 +575,6 @@
               <item name="polyx-HTML" type="b2602c69:ProjectViewProjectNode" />
               <item name="polyx-HTML" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="polyx-HTML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="polyx-HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="polyx-HTML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="polyx-HTML" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -280,7 +586,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schoolBox" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -327,33 +633,36 @@
       <workItem from="1530636637820" duration="20174000" />
       <workItem from="1530684268036" duration="880000" />
       <workItem from="1530689770247" duration="30110000" />
+      <workItem from="1530779322429" duration="14225000" />
+      <workItem from="1530795056889" duration="9858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162614000" />
+    <option name="totallyTimeSpent" value="186697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08166491" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11064278" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32844242" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -363,15 +672,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/sass/_vars.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/contacts.sass" />
     <entry file="file://$PROJECT_DIR$/app/sass/header.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -583,20 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/tabs.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="205" column="73" selection-start-line="203" selection-start-column="2" selection-end-line="205" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/footer.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="864">
@@ -604,75 +896,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-3/main.css" />
+    <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
-          <caret line="87" column="14" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/header.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="3510" column="38" selection-start-line="3510" selection-start-column="38" selection-end-line="3510" selection-end-column="38" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#thead#0;n#table#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#thead#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#6;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#7;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#8;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#9;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#6;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="385">
+          <caret line="177" column="19" selection-start-line="177" selection-start-column="19" selection-end-line="177" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/content.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="168">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
+    <entry file="file://$PROJECT_DIR$/app/sass/header.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="95" column="18" selection-start-line="95" selection-start-column="18" selection-end-line="95" selection-end-column="18" />
+        <state relative-caret-position="-169">
+          <caret line="122" column="23" selection-start-line="122" selection-start-column="23" selection-end-line="122" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <marker date="1530803908696" expanded="true" signature="1149:1965" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="669" column="28" selection-start-line="669" selection-start-column="28" selection-end-line="669" selection-end-column="28" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#2;n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#thead#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#thead#0;n#table#0;n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#2;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#3;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#4;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#5;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#6;n#tbody#0;n#table#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/tabs.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="326" column="19" selection-start-line="326" selection-start-column="19" selection-end-line="326" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/fz3temp-2/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="786" column="20" selection-start-line="786" selection-start-column="20" selection-end-line="786" selection-end-column="20" />
         </state>
       </provider>
     </entry>

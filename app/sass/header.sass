@@ -47,6 +47,7 @@
     padding-right: 1rem
     display: flex
     justify-content: space-between
+    position: relative
     .middle-list
       &__title
         font-size: 14px
@@ -84,6 +85,7 @@
   &__language
     border: $border
     border-radius: 50px
+    cursor: pointer
     width: 32px
     height: 32px
     text-align: center
@@ -106,23 +108,55 @@
     border: 1px solid rgb(51, 61, 89)
     border-radius: 20px
     position: relative
-    width: 130px
+    min-width: 130px
     height: 32px
     margin-right: 15px
     padding-left: 30px
     &-wrap
+      cursor: pointer
       display: flex
       align-items: center
-
+      position: relative
       flex-grow: 1
     img
       margin-left: 5px
+      margin-right: 5px
     &-name
       color: #ffffff
       font-size: 14px
 
-
-
+.author-list
+  position: absolute
+  background-color: #fff
+  top: 35px
+  right: 10px
+  opacity: 0
+  visibility: hidden
+  height: 0
+  transition: all 0.1s linear
+  z-index: 1
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5)
+  padding: 1rem
+  &-open
+    border-radius: 6px
+    height: auto
+    opacity: 1
+    visibility: visible
+  &__link
+    color: $title-color
+    display: flex
+    width: 100%
+    height: 100%
+    align-items: center
+    font-size: 14px
+    font-weight: bold
+    padding: 0.5rem
+    //text-transform: uppercase
+    &:hover
+      color: rgb(83, 197, 153)
+      text-decoration: none
+    img
+      margin-left: 15px
 
 .burger
   cursor: pointer
@@ -147,6 +181,7 @@
     font-weight: bold
     text-transform: uppercase
     line-height: 1.2
+
 .navigation
   position: absolute
   background-color: #fff
@@ -157,6 +192,7 @@
   height: 0
   transition: all 0.1s linear
   z-index: 1
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5)
   &__link
     color: $title-color
     display: flex
@@ -179,6 +215,37 @@
     opacity: 1
     visibility: visible
 
-
+.navigation-language
+  border-radius: 6px
+  position: absolute
+  background-color: #fff
+  top: 35px
+  right: 1rem
+  width: 50px
+  opacity: 0
+  visibility: hidden
+  height: 0
+  transition: all 0.1s linear
+  z-index: 1
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5)
+  &__link
+    color: $title-color
+    display: flex
+    height: 100%
+    align-items: center
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    padding: 0.5rem
+    justify-content: center
+    &:hover
+      color: rgb(83, 197, 153)
+      text-decoration: none
+    img
+      margin-left: 15px
+  &__open
+    height: auto
+    opacity: 1
+    visibility: visible
 .header-responsive
   display: none

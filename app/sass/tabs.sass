@@ -164,8 +164,13 @@
       height: 32px
       display: flex
       align-items: center
+      min-width: 20px
+      min-height: 20px
       &-name
         font-weight: bold
+      img
+        width: 20px
+        height: 20px
     .table
       thead
         tr
@@ -264,11 +269,14 @@
     align-items: center
     margin-top: 15px
     &-right
+      display: flex
       width: 189px
-      justify-content: flex-end
+      justify-content: space-between
       margin-left: auto
+      margin-top: 1px
       .percent-count
         background-color: #f1f3f5
+        border: none
         border-radius: 3px
         cursor: pointer
         color: $title-color
@@ -278,6 +286,8 @@
         padding: 2.5px 7.5px
         &:hover
           background-color: #fff2cc
+        &:focus
+          outline: none
         &-active
           background-color: #fff2cc
   &__label
@@ -301,6 +311,7 @@
     top: 50%
     transform: translateY(-50%)
   &__btn
+    border: none
     color: #ffffff
     border-radius: 3px
     background-color: rgb(60, 191, 141)
@@ -312,6 +323,8 @@
     &:hover
       color: #ffffff
       text-decoration: none
+    &:focus
+      outline: none
 
 .sell
   &__btn

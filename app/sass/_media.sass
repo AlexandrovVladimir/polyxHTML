@@ -16,7 +16,9 @@
     font-size: 10px
     .percent-count
       padding: 2px
-
+@media screen and (max-width: 1505px) and (min-width: 1280px)
+  .currency-list .table td, .table th
+    padding: 5px !important
 @media screen and (max-width: 1280px)
   .header__etc
     flex: 0 0 calc(100% - 78px) !important
@@ -92,6 +94,12 @@
     .footer__social
       margin-top: 0
 @media screen and (max-width: 767px)
+  .footer
+    padding: 2rem 1rem 1rem
+  .col-md-3 .footer__text
+    margin-top: 15px !important
+  .footer__social
+    padding-top: 15px
   .col-md-3 .footer__text .text
     display: block
   .footer-list
@@ -116,6 +124,13 @@
   .header-responsive .header__ether
     padding-left: 15px
 
+@media screen and (max-width: 767px) and (min-width: 601px)
+  .currency-list, .wallet-list
+    .nav-tabs .nav-link,
+    .sell-orders tbody td,
+    .table td, .table th
+      padding: 2px !important
+
 @media screen and (max-width: 600px)
   .currency-list, .wallet-list
     flex: 0 0 100%
@@ -124,12 +139,19 @@
   .currency-list
     margin-bottom: 15px
 @media screen and (max-width: 450px)
+  .buy__row-right, .sell__row-right
+    width: 100%
   .limit-list .nav-tabs .nav-link
     padding: 0.5rem 1rem
     font-size: 14px
   .header-responsive .header__etc
     display: none
 @media screen and (max-width: 425px)
+  .currency-list, .wallet-list
+    .nav-tabs .nav-link,
+    .sell-orders tbody td,
+    .table td, .table th
+      padding: 5px !important
   .navigation
     width: 700%
   .buy__input, .sell__input
@@ -150,6 +172,10 @@
 @media screen and (max-width: 380px)
   .currency-list .nav-tabs .nav-link, .wallet-list .nav-tabs .nav-link
     padding: 5px
+@media screen and (max-width: 366px)
+  .header__etc
+    padding-right: 15px
+    padding-left: 0
 @media screen and (max-width: 345px)
   .wallet-list .nav-tabs .nav-link
     font-size: 12px
